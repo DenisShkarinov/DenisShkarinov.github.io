@@ -243,10 +243,6 @@ header .swiper-container .swiper-button-next img:last-child {
   padding-left: 5px;
 }
 
-main #about {
-  padding-top: 4rem;
-}
-
 main #about .row {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -407,11 +403,12 @@ footer .contact__form fieldset {
           align-items: center;
   max-width: 450px;
   border: none;
+  margin: 0;
 }
 
 footer .contact__form fieldset .form__field {
-  max-width: 180px;
-  max-height: 35px;
+  min-width: 180px;
+  min-height: 35px;
   margin: 15px;
 }
 
@@ -421,8 +418,6 @@ footer .contact__form fieldset .form__field:nth-child(-N+2) {
 
 footer .contact__form fieldset .form__field input {
   padding: 5px 15px;
-  width: 180px;
-  height: 35px;
   background-color: #444;
   border: 1px solid #616161;
   -webkit-box-sizing: border-box;
@@ -448,7 +443,7 @@ footer .contact__form textarea {
           box-sizing: border-box;
   color: #989898;
   min-width: 180px;
-  max-width: 180px;
+  max-width: 270px;
   min-height: 90px;
   max-height: 90px;
   padding: 7px 15px;
@@ -458,6 +453,7 @@ footer .contact__form button {
   color: #ffffff;
   font-size: 18px;
   line-height: 50px;
+  margin: 2rem auto;
 }
 
 footer .contact__form button:hover {
@@ -497,6 +493,25 @@ footer .contact__form button:hover {
     text-align: center;
   }
   main .rating {
+    width: 100%;
+  }
+  footer .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  footer .container .row .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
   }
 }
@@ -567,6 +582,38 @@ footer .contact__form button:hover {
   main #about .col-4:last-child {
     display: none;
   }
+  footer .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  footer .container .row .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  footer .container .row .footer__links .numbers {
+    margin-right: 15px;
+  }
+  footer .container .row .footer__links .adress {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer .container .row .footer__links .numbers, footer .container .row .footer__links .adress {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -609,11 +656,16 @@ footer .contact__form button:hover {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 492px) {
   footer fieldset .form__field {
-    width: 100%;
+    display: block;
+    width: 270px;
   }
   footer fieldset .form__field input {
     width: 100%;
+  }
+  .contact__form textarea {
+    width: 270px;
+    max-width: 270px;
   }
 }

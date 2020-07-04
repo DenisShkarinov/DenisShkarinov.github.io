@@ -190,7 +190,6 @@ header {
 
 main {
    #about {
-      padding-top: 4rem;
       .row {
          align-items: flex-start;
       }
@@ -314,10 +313,11 @@ footer {
          align-items: center;
          max-width: 450px;
          border: none;
+         margin: 0;
          
          .form__field {
-            max-width: 180px;
-            max-height: 35px;
+            min-width: 180px;
+            min-height: 35px;
             margin: 15px;
 
             &:nth-child(-N+2) {
@@ -326,8 +326,6 @@ footer {
 
             input {
                padding: 5px 15px;
-               width: 180px;
-               height: 35px;
                background-color: #444;
                border: 1px solid #616161;
                box-sizing: border-box;
@@ -351,7 +349,7 @@ footer {
          box-sizing: border-box;
          color: #989898;
          min-width: 180px;
-         max-width: 180px;
+         max-width: 270px;
          min-height: 90px;
          max-height: 90px;
          padding: 7px 15px;
@@ -361,6 +359,7 @@ footer {
          font-size: 18px;
          line-height: 50px;
 
+         margin: 2rem auto;
          &:hover {
             cursor: pointer;
          }
@@ -404,6 +403,19 @@ footer {
       }
       .rating {
          width: 100%;
+      }
+   }
+   footer {
+      .container {
+         .row {
+            flex-flow: column-reverse;
+            .footer__links {
+               display: flex;
+               flex-flow: row wrap;
+               justify-content: space-between;
+               width: 100%;
+            }
+         }
       }
    }
 }
@@ -472,6 +484,40 @@ footer {
          }
       }
    }
+   footer {
+      .container {
+         .row {
+            flex-flow: column-reverse;
+            .footer__links {
+               display: flex;
+               flex-flow: row wrap;
+               justify-content: space-between;
+               width: 100%;
+               .numbers {
+                  margin-right: 15px;
+               }
+               .adress {
+                  text-align: right;
+               }
+            }
+         }
+      }
+   }
+}
+@media screen and ( max-width: 500px ) {
+   footer {
+      .container {
+         .row {
+            .footer__links {
+               .numbers, .adress {
+                  width: 100%;
+                  text-align: center;
+               }
+            }
+            
+         }
+      }
+   }
 }
 @media screen and ( min-width: 320px) and ( max-width: 768px ) {
    header {
@@ -523,16 +569,22 @@ footer {
       display: none;
    }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 492px) {
    footer {
       fieldset {
          .form__field {
-            width: 100%;
+            display: block;
+            width: 270px;
 
             input {
                width: 100%;
             }
          }
       }
+      
+   }
+   .contact__form textarea {
+      width: 270px;
+      max-width: 270px;
    }
 }
