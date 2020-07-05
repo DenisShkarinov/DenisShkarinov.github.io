@@ -86,7 +86,7 @@ ul {
 }
 header {
    position: relative;
-   background: url(../img/header__bg.we) center no-repeat;
+   background: url(../img/header__bg.webp) center no-repeat;
    width: 100%;
    height: 1000px;
 
@@ -111,9 +111,7 @@ header {
          }
       }
    }
-   .mobile-menu {
-      display: none;
-   }
+   
    .fixed-panel {
       position: absolute;
       width: 150px;
@@ -175,7 +173,7 @@ header {
          all: initial;
          color: #fff;
          &:hover {
-            cursor: pointer;
+            cursor: grab;
          }
 
          img:first-child {
@@ -187,7 +185,6 @@ header {
       }
    }
 }
-
 main {
    #about {
       .row {
@@ -375,7 +372,7 @@ footer {
    line-height: 50px;
    background-color: $gold;
    transition: 0.3s;
-   margin-top: 2rem;
+   margin: 2rem auto 0;
 
    &:hover {
       background-color: transparent;
@@ -419,60 +416,11 @@ footer {
       }
    }
 }
+.nav-mobile {
+   display: none;
+}
 @media only screen and (max-width: 1080px) {
    header {
-      .nav-menu {
-         display: none;
-      }
-      .mobile-menu {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         position: fixed;
-         height: 50px;
-         width: 100%;
-         z-index: 100;
-         background-color: #333333;
-
-         a {
-            padding: 10px 15px;
-         }
-         
-      }
-      .burger__button {
-         display: block;
-         width: 50px;
-         height: 50px;
-         position: relative;
-
-         span {
-            width: 15px;
-         }
-         span,
-         span:before,
-         span:after {
-            position: absolute;
-            top: 50%; margin-top: -1px;
-            left: 50%; margin-left: -8px;
-            height: 2px;
-            background-color: #fff;
-         }
-         span:before,
-         span:after {
-            content: "";
-            transition: 0.3s;
-            display: block;
-         }
-         span:before {
-            width: 20px;
-            transform: translateY(-5px);
-         }
-         span:after {
-            width: 10px;
-            transform: translateY(5px);
-         }
-         
-      }
       .swiper-container {
          display: none;
       }
@@ -586,5 +534,107 @@ footer {
    .contact__form textarea {
       width: 270px;
       max-width: 270px;
+   }
+}
+
+@media screen and (min-width: 320px) and (max-width:950px) {
+   header {
+      .nav-menu {
+         display: none;
+      }
+      .mobile-menu {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: fixed;
+         height: 50px;
+         width: 100%;
+         z-index: 100;
+         background-color: #333333;
+         transition: 0.3s;
+         a {
+            padding: 10px 15px;
+         }
+         
+      }
+      .nav-mobile__active {
+         display: block;
+         position: fixed;
+         top: 50px;
+         height: 100vh;
+         min-width: 7%;
+         background-color: #333333;
+         z-index: 1000;
+         overflow-y: auto;
+         transition: 0.3s;
+         a {
+            display: block;
+            padding: 15px 20px;
+            font-size: 24px;
+            line-height: 33px;
+         }
+         .social__links {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+      
+            a {
+               font-size: 24px;
+               line-height: 33px;
+               width: 25%;
+               text-align: center;
+            }
+         }
+      }
+      .burger__button {
+         display: block;
+         width: 50px;
+         height: 50px;
+         position: relative;
+
+         span {
+            width: 15px;
+         }
+         span,
+         span:before,
+         span:after {
+            position: absolute;
+            top: 50%; margin-top: -1px;
+            left: 50%; margin-left: -8px;
+            height: 2px;
+            background-color: #fff;
+         }
+         span:before,
+         span:after {
+            content: "";
+            transition: 0.3s;
+            display: block;
+         }
+         span:before {
+            width: 20px;
+            transform: translateY(-5px);
+         }
+         span:after {
+            width: 10px;
+            transform: translateY(5px);
+         }
+         
+      }
+      .burger_button__active {
+         span {
+            height: 0;
+         }
+         span:before {
+            transform: rotate(45deg);
+         }
+         span:after {
+            width: 20px;
+            transform: rotate(-45deg);
+         }
+      }
+      
    }
 }
