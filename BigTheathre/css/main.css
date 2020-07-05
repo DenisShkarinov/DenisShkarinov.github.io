@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-transform: uppercase;
@@ -560,7 +564,10 @@ footer .contact__form button:hover {
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   header {
-    height: 600px;
+    height: 480px;
+  }
+  header .text-container {
+    padding-top: 2rem;
   }
   header .fixed-panel {
     display: none;

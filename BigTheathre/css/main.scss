@@ -13,6 +13,10 @@ a {
 
    text-transform: uppercase;
    text-decoration: none;
+
+   &:hover {
+      cursor: pointer;
+   }
 }
 h1,h2,h3,h4,h5,h6 {
    color: #fff;
@@ -469,7 +473,11 @@ footer {
 }
 @media screen and ( min-width: 320px) and ( max-width: 768px ) {
    header {
-      height: 600px;
+      height: 480px;
+
+      .text-container {
+         padding-top: 2rem;
+      }
       .fixed-panel {
          display: none;
       }
