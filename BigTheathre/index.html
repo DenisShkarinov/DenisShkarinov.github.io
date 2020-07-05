@@ -64,12 +64,10 @@
 					<div class="swiper-wrapper">
 						<!-- Slides -->
 						<div class="swiper-slide">
-							<img data-src="img/scene1.webp" data-srcset="img/scene1.webp 2x" class="swiper-lazy" alt="La Scala">
-							<div class="swiper-lazy-preloader"></div>
+							<img src="img/scene1.webp" alt="La Scala">
 						</div>
 						<div class="swiper-slide">
-							<img data-src="img/scene1.webp" data-srcset="img/scene1.webp 2x" class="swiper-lazy" alt="Other Scene">
-							<div class="swiper-lazy-preloader"></div>
+							<img src="img/scene1.webp" alt="Other Scene">
 						</div>
 					</div>
 					<!-- If we need navigation buttons -->
@@ -130,26 +128,22 @@
 						<!-- Slides -->
 						<div class="swiper-slide">
 							<a href="#">
-								<img data-src="img/oskar2020.webp" data-srcset="img/oskar2020.webp" class="swiper-lazy" alt="Oskar">
-								<div class="swiper-lazy-preloader"></div>
+								<img src="img/oskar2020.webp" alt="Oskar">
 							</a>
 						</div>
 						<div class="swiper-slide">
 							<a href="#">
-								<img data-src="img/hz.webp" data-srcset="img/hz.webp" class="swiper-lazy" alt="хз">
-								<div class="swiper-lazy-preloader"></div>
+								<img src="img/hz.webp" alt="хз">
 							</a>
 						</div>
 						<div class="swiper-slide">
 							<a href="#">
-								<img data-src="img/gold_gram.webp" data-srcset="img/gold_gram.webp" class="swiper-lazy" alt="Золотой Граммофон">
-								<div class="swiper-lazy-preloader"></div>
+								<img src="img/gold_gram.webp" alt="Золотой Граммофон">
 							</a>
 						</div>
 						<div class="swiper-slide">
 							<a href="#">
-								<img data-src="img/selcunchik.webp" data-srcset="img/selcunchik.webp" class="swiper-lazy" alt="Щелкунчик">
-								<div class="swiper-lazy-preloader"></div>
+								<img src="img/selcunchik.webp" alt="Щелкунчик">
 							</a>
 						</div>
 					</div>
@@ -224,23 +218,19 @@
 					</div>
 					
 				</div>
-				<form action="#" method="post" autocomplete="on" class="contact__form">
+				<form action="php/form.php" method="post" autocomplete="on" class="contact__form">
 					<fieldset>
 						<div class="form__field">
-							<label for="name"></label>
-							<input type="text" placeholder="Имя">
+							<input type="text" name="name" placeholder="Имя">
 						</div>
 						<div class="form__field">
-							<label for="name"></label>
-							<input type="text" placeholder="Компания">
+							<input type="text" name="compaign" placeholder="Компания">
 						</div>
 						<div class="form__field">
-							<label for="tel"></label>
-							<input type="tel" placeholder="Телефон">
+							<input type="tel" name=tel placeholder="Телефон">
 						</div>
 						<div class="form__field">
-							<label for="email"></label>
-							<input type="email" placeholder="E-mail">
+							<input type="email" name="email" placeholder="E-mail">
 						</div>
 						<p class="policy">
 							* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.
@@ -248,7 +238,7 @@
 					</fieldset>
 					
 					<div class="form__field">
-						<textarea maxlength="500" name="message" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
+						<textarea maxlength="500" name="message" name="message" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
 						<button class="button">ОТПРАВИТЬ</button>
 					</div>
 				</form>
