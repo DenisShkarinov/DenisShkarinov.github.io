@@ -110,8 +110,13 @@ header {
          line-height: 25px;
          letter-spacing: 0.1em;
          padding: 0 20px;
+         transition: 0.2s;
          &:last-child {
             border-bottom: 2px solid $gold;
+         }
+         &:hover {
+            color: $gold;
+            transition: 0.2s;
          }
       }
    }
