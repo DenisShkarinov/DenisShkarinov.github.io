@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>HouseVOP</title>
+</head>
+<body>
+	
+	<header id="home">
+		<nav>
+			<div class="logo">
+				<a href="#home">HouseVOP</a>
+				<p>
+					жилой комплекс
+				</p>
+			</div>
+			<div class="nav__links">
+				<a href="#">О комплексе</a>
+				<a href="#">Район</a>
+				<a href="#">Каталог квартир</a>
+				<a href="#">Ипотека</a>
+				<a href="#">Контакты</a>
+			</div>
+			<a class="burger__button">
+				<span></span>
+			</a>
+			<div class="mobile-menu">
+				<a href="#">О комплексе</a>
+				<a href="#">Район</a>
+				<a href="#">Каталог квартир</a>
+				<a href="#">Ипотека</a>
+				<a href="#">Контакты</a>
+				<div class="social__links">
+					<a href="https://youtube.com"><img src="img/yout.svg" alt="youtube"></a>
+					<a href="https://vk.com"><img src="img/vk.svg" alt="vk"></a>
+					<a href="https://facebook.com"><img src="img/facebook.svg" alt="facebook"></a>
+					<a href="https://instagram.com"><img src="img/instagram.svg" alt="instagram"></a>
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="text-container">
+			<div class="title">
+				<h1>Жилой комплекс в историческом центре</h1>
+			</div>
+			<img src="img/mouse.svg" class="mouse" alt="mouse">
+			<div class="info">
+				<div>
+					<img src="img/geo.svg" alt="geo">
+					<a href="#geo">Наб. реки Фонтанки 10-15</a> 
+				</div>
+				<div>
+					<img src="img/phone-call.svg" alt="phone">
+					<a href="tel:88121234567">8 (812) 123-45-67</a> 
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="box">
+						<img src="img/bench.svg" alt="">
+						<p>
+							Рядом исторические парки и скверы
+						</p>
+					</div>
+					<div class="box">
+						<img src="img/building.svg" alt="">
+						<p>
+							Полностью обустроенный
+						</p>
+					</div>
+					<div class="box">
+						<img src="img/fountain.svg" alt="">
+						<p>
+							10 фонтанов на территории
+						</p>
+					</div>
+					<div class="box">
+						<img src="img/bicycle.svg" alt="">
+						<p>
+							6 км велодорожек
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="flats">
+			<div class="container">
+				<div class="title">
+					<h2>Наши квартиры</h2>
+				</div>
+				<div class="image-container">
+					<div>
+						<img src="img/loft.png" alt="loft">
+						<span>Loft - 3 этажа</span>
+					</div>
+					<div>
+						<img src="img/loft.png" alt="loft">
+						<span>Loft - 2 этажа</span>
+					</div>
+					<div>
+						<img src="img/loft.png" alt="loft">
+						<span>Loft - 3 этажа</span>
+					</div>
+					<div>
+						<img src="img/loft.png" alt="loft">
+						<span>Loft - 2 этажа</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="form">
+			<div class="container">
+				<div class="row">
+					<div class="title">
+						<h2>Хотите посмотреть?</h2>
+						<p>
+							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+						</p>
+					</div>
+					<form action="#" method="post">
+						<div class="form__field">
+							<label for="form_name"></label>
+							<input type="text" id="form_name" placeholder="Ваше имя">
+						</div>
+						<div class="form__field">
+							<label for="form_phone"></label>
+							<input type="tel" id="form_phone" pattern="[0-9]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}"
+							size="20" minlength="9" maxlength="15" placeholder="Ваш телефон" autocorrect="on">
+						</div>
+						<div class="policy">
+							<span>*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу</span>
+						</div>
+						<input type="button" name="submit" value="Посмотреть район">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="video-block">
+			<video controls max-width="720" max-height="650">
+				<source src="video/angular.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+				<source src="video/angular.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
+				<source src="video/angular.ogv" type="video/ogg"><!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera -->
+				<object data="video/angular.swf" type="application/x-shockwave-flash"><!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
+					<param name="movie" value="video.swf">
+				</object>
+			</video>
+		</div>
+
+		<div class="map-block" id="geo">
+			<div class="title">
+				<h2>Район на карте</h2>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.2444236685!2d30.33763921635235!3d59.94467898187837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Nw!5e0!3m2!1sru!2sus!4v1594746164093!5m2!1sru!2sus" 
+			width="1100" height="710" frameborder="0" style="border:0;" allowfullscreen="" 
+			aria-hidden="false" tabindex="0">
+			</iframe>
+		</div>
+		<div id="questions">
+			<div class="container">
+				<div class="title">
+					<h2>Есть вопросы?</h2>
+				</div>
+				<div class="row">
+					<div class="policy">
+						<span>*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
+					</div>
+					<form action="#" method="post">
+						<div class="form__field">
+							<label for="questions_name"></label>
+							<input type="text" id="questions_name" placeholder="Ваше имя">
+						</div>
+						<div class="form__field">
+							<label for="questions_phone"></label>
+							<input type="tel" id="questions_phone" pattern="[0-9]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}"
+							size="20" minlength="9" maxlength="15" placeholder="Ваш телефон" autocorrect="on">
+						</div>
+						<input type="button" name="submit" value="Посмотреть район">
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<div class="logo">
+						<a href="#home">HouseVOP</a>
+						<p>
+							жилой комплекс
+						</p>
+					</div>
+				</div>
+				<div class="column">
+					<a href="#">О комплексе</a>
+					<a href="#">Район</a>
+					<a href="#">Каталог квартир</a>
+					<a href="#">Ипотека</a>
+					<a href="#">Контакты</a>
+				</div>
+				<div class="column">
+					<a href="#">Адрес: Наб. реки Фонтанки 10-15</a>
+					<a href="tel: 88121234567">Телефон: 8 (812) 123-45-67</a>
+					<a href="#">Отдел продаж: 10:00 - 20:00</a>
+					<a href="#">E-mail: vip@housevip.ru</a>
+					<div class="social__links">
+						<a href="https://youtube.com"><img src="img/yout.svg" alt="youtube"></a>
+						<a href="https://vk.com"><img src="img/vk.svg" alt="vk"></a>
+						<a href="https://facebook.com"><img src="img/facebook.svg" alt="facebook"></a>
+						<a href="https://instagram.com"><img src="img/instagram.svg" alt="instagram"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+</html>
