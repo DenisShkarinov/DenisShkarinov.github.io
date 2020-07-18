@@ -49,8 +49,8 @@ a:hover {
 }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242B33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242B33)), url(../img/bg_header.png);
-  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(../img/bg_header.png);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242B33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242B33)), url(../img/bg_header.webp);
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(../img/bg_header.webp);
   min-height: 840px;
 }
 
@@ -264,7 +264,7 @@ main #flats .image-container div span {
 }
 
 main #form {
-  background: url(../img/bg__form.png);
+  background: url(../img/bg__form.webp);
   padding: 2rem 0;
 }
 
