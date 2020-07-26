@@ -4,13 +4,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
 	<title>Большой Театр</title>
 </head>
 <body>
 	
 	<header id="home">
-		<nav class="nav-menu">
+		<nav class="nav-menu" data-aos="fade-down" data-aos-duration="1500">
 			<a href="#home">главная</a>
 			<a href="#about">о театре</a>
 			<a href="#scenes">наши постановки</a>
@@ -38,7 +39,7 @@
 				<a href="https://www.youtube.com/" target="_blank"><img src="icons/youtube.png" alt=""></a>
 			</div>
 		</div>
-		<div class="fixed-panel">
+		<div class="fixed-panel" data-aos="fade-right">
 			<div class="nav-panel">
 				<a href="#contacts" class="vertical__text">контактная информация</a>
 				<span class="vertical__line"></span>
@@ -52,14 +53,14 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="text-container">
+				<div data-aos="fade-right" class="text-container">
 					<h1>большой театр</h1>
 					<p>
 						Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.
 					</p>
 					<a href="#" class="button">афиша</a>
 				</div>
-				<div class="swiper-container">
+				<div class="swiper-container" data-aos="fade-down">
 					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper">
 						<!-- Slides -->
@@ -93,13 +94,13 @@
 					<h2><span class="gold">о</span> театре</h2>
 				</div>
 				<div class="row">
-					<div class="col-4">
+					<div class="col-4" data-aos="flip-left" data-aos-duration="1500">
 						<h3>самый лучший театр спб</h3>
 						<p>
 							Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.
 						</p>
 					</div>
-					<div class="col-4 centered">
+					<div class="col-4 centered" data-aos="flip-down" data-aos-duration="1500">
 						<h3>немного о цифрах</h3>
 						<img src="icons/armchair.png" alt="armchairs">
 						<p>
@@ -110,7 +111,7 @@
 							<span class="gold">350</span> лет истории
 						</p>
 					</div>
-					<div class="col-4">
+					<div class="col-4" data-aos="flip-right" data-aos-duration="1500">
 						<img src="img/build.webp" alt="Main Build in SPB">
 					</div>
 				</div>
@@ -122,7 +123,7 @@
 				<div class="title">
 					<h2><span class="gold">наши</span> постановки</h2>
 				</div>
-				<div class="swiper-events">
+				<div class="swiper-events" data-aos="fade-up" data-aos-duration="1500">
 					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper">
 						<!-- Slides -->
@@ -151,7 +152,7 @@
 			</div>
 		</div>
 
-		<div class="rating">
+		<div class="rating" data-aos="fade-right" data-aos-duration="1500">
 			<div class="image-container">
 				<div class="years">
 					<span class="gold">2018</span>
@@ -255,6 +256,7 @@
 	</footer>
 
 	<script src="js/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
