@@ -108,7 +108,9 @@ strong {
 
 header {
   position: fixed;
-  width: 100%;
+  max-width: 1440px;
+  left: 0;
+  right: 0;
   z-index: 100;
   margin: 0 auto;
   background-color: #fff;
@@ -709,6 +711,10 @@ main #faq .container .panel {
   transition: max-height 0.3s ease-out;
 }
 
+main #faq .container .panel:last-child {
+  border-bottom: none;
+}
+
 main #faq .container .panel .panel__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -924,7 +930,7 @@ footer p {
   padding-bottom: 10px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 640px) {
+@media only screen and (min-width: 320px) and (max-width: 720px) {
   header .mobile-menu .mobile__list {
     display: none;
     -webkit-box-orient: vertical;
@@ -945,8 +951,8 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-animation: sliding .5s 0s 1 normal none;
-    animation: sliding .5s 0s 1 normal none;
+    -webkit-animation: sliding_mobile .5s 0s 1 normal none;
+    animation: sliding_mobile .5s 0s 1 normal none;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -962,18 +968,6 @@ footer p {
   }
   main #features .container {
     background: none;
-  }
-  main #features .container .column:after {
-    content: none;
-  }
-  main #features .container .row:last-child {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-  }
-  main #features .container .row:last-child span:before, main #features .container .row:last-child span:after {
-    width: 11px;
   }
   main #stats .blue-block, main #stats .grey-block {
     -webkit-box-align: center;
@@ -1096,6 +1090,11 @@ footer p {
   #plan .cloud img {
     display: none;
   }
+  main #stats .container .row .grey-block, main #stats .container .row .blue-block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1279px) {
@@ -1179,6 +1178,18 @@ footer p {
     padding-left: 5px;
     padding-right: 5px;
   }
+  main #features .container .column:after {
+    content: none;
+  }
+  main #features .container .row:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  main #features .container .row:last-child span:before, main #features .container .row:last-child span:after {
+    width: 11px;
+  }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 1280px) {
@@ -1202,8 +1213,8 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-animation: sliding .5s 0s 1 normal none;
-    animation: sliding .5s 0s 1 normal none;
+    -webkit-animation: sliding_tablet .5s 0s 1 normal none;
+    animation: sliding_tablet .5s 0s 1 normal none;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -1215,7 +1226,29 @@ footer p {
   }
 }
 
-@-webkit-keyframes sliding {
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+  main #manage {
+    padding: 5% 7%;
+  }
+  main #manage .container .row .text-container,
+  main #manage .container .row .image-container {
+    max-width: 50%;
+  }
+  main #quotes {
+    padding: 10% 0 8% 2%;
+  }
+  main #quotes .container .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  main #quotes .container .row .text-container {
+    margin: 0 auto 4%;
+  }
+}
+
+@-webkit-keyframes sliding_mobile {
   0% {
     width: 0vw;
   }
@@ -1224,11 +1257,29 @@ footer p {
   }
 }
 
-@keyframes sliding {
+@keyframes sliding_mobile {
   0% {
     width: 0vw;
   }
   100% {
     width: 100vw;
+  }
+}
+
+@-webkit-keyframes sliding_tablet {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30vw;
+  }
+}
+
+@keyframes sliding_tablet {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30vw;
   }
 }

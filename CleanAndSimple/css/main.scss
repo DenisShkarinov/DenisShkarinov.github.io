@@ -91,7 +91,8 @@ strong {
 }
 header {
    position: fixed;
-   width: 100%;
+   max-width: 1440px;
+   left: 0; right: 0;
    z-index: 100;
    margin: 0 auto;
    background-color: #fff;
@@ -582,6 +583,10 @@ main {
             overflow: hidden;
             transition: max-height 0.3s ease-out;
 
+            &:last-child {
+               border-bottom: none;
+            }
+
             .panel__content {
                display: flex;
                flex-flow: row wrap;
@@ -766,7 +771,7 @@ footer {
    }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 640px) {
+@media only screen and (min-width: 320px) and (max-width: 720px) {
    header {
       .mobile-menu {
          .mobile__list {
@@ -784,8 +789,8 @@ footer {
          .mobile__list__active {
             position: absolute;
             display: flex;
-            -webkit-animation: sliding .5s 0s 1 normal none;
-            animation: sliding .5s 0s 1 normal none;
+            -webkit-animation: sliding_mobile .5s 0s 1 normal none;
+            animation: sliding_mobile .5s 0s 1 normal none;
             transition: 0.5s;
          }
       }
@@ -806,20 +811,6 @@ footer {
       #features {
          .container {
             background: none;
-
-            .column:after {
-               content: none;
-            }
-            .row:last-child {
-               flex-flow: column;
-
-               span {
-                  &:before,
-                  &:after {
-                     width: 11px;
-                  }
-               }
-            }
          }
       }
       #stats {
@@ -957,6 +948,17 @@ footer {
          }
       }
    }
+   main {
+      #stats {
+         .container {
+            .row {
+               .grey-block, .blue-block {
+                  align-items: center;
+               }
+            }
+         }
+      }
+   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1279px) {
    .container {
@@ -1042,12 +1044,29 @@ footer {
             padding-right: 5px;
          }
       }
+      #features {
+         .container {
+            
+            .column:after {
+               content: none;
+            }
+            .row:last-child {
+               flex-flow: column;
+
+               span {
+                  &:before,
+                  &:after {
+                     width: 11px;
+                  }
+               }
+            }
+         }
+      }
    }
 }
 @media only screen and (min-width: 640px) and (max-width:1280px) {
    header {
       .mobile-menu {
-         
          .mobile__list {
             display: none;
             flex-flow: column;
@@ -1058,14 +1077,12 @@ footer {
             background-color: #F5F8FF;
             text-align: center;
             transition: .3s;
-
-            
          }
          .mobile__list__active {
             position: absolute;
             display: flex;
-            -webkit-animation: sliding .5s 0s 1 normal none;
-            animation: sliding .5s 0s 1 normal none;
+            -webkit-animation: sliding_tablet .5s 0s 1 normal none;
+            animation: sliding_tablet .5s 0s 1 normal none;
             transition: 0.5s;
             
          }
@@ -1080,8 +1097,36 @@ footer {
    }
 }
 
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+   main {
+      #manage {
+         padding: 5% 7%;
+         .container {
+            .row {
+               .text-container,
+               .image-container {
+                  max-width: 50%;
+               }
+            }
+         }
+      }
+      #quotes {
+         padding: 10% 0 8% 2%;
+         .container {
+            .row {
+               flex-flow: row wrap;
 
-@-webkit-keyframes sliding {
+               .text-container {
+                  margin: 0 auto 4%;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@-webkit-keyframes sliding_mobile {
    0% {
       width: 0vw;
    }
@@ -1089,11 +1134,27 @@ footer {
       width: 100vw;
    }
 }
-@keyframes sliding {
+@keyframes sliding_mobile {
    0% {
       width: 0vw;
    }
    100% {
       width: 100vw;
+   }
+}
+@-webkit-keyframes sliding_tablet {
+   0% {
+      width: 0;
+   }
+   100% {
+      width: 30vw;
+   }
+}
+@keyframes sliding_tablet {
+   0% {
+      width: 0;
+   }
+   100% {
+      width: 30vw;
    }
 }
