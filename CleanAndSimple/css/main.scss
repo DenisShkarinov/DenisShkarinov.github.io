@@ -811,6 +811,10 @@ footer {
       #features {
          .container {
             background: none;
+
+            .text-container {
+               margin-bottom: 8%;
+            }
          }
       }
       #stats {
@@ -853,9 +857,6 @@ footer {
                      flex-flow: row wrap;
                      justify-content: center;
                      
-                     .get__btn {
-                        margin-top: 0;
-                     }
                      a {
                         margin-top: 1.5rem;
                      }
