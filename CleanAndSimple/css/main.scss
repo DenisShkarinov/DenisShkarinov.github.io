@@ -856,6 +856,9 @@ footer {
                      .get__btn {
                         margin-top: 0;
                      }
+                     a {
+                        margin-top: 1.5rem;
+                     }
                      .bookmark {
                         background-color: #3D4F9F;
                         padding: 10px;
@@ -1039,9 +1042,6 @@ footer {
                   transition: 0.3s;
                   transform: rotate(-45deg);
                }
-            }
-            .mobile__list {
-               
             }
          }
       }
