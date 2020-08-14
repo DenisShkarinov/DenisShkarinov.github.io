@@ -208,7 +208,7 @@ main {
       }
    }
    #manage {
-      padding: 11% 3%;
+      padding: 5% 3%;
       background-color: $main;
 
       .row {
@@ -256,7 +256,7 @@ main {
       }
    }
    #features {
-      padding: 11% 3%;
+      padding: 3%;
 
       .container {
          background: url(../img/clouds.svg) no-repeat;
@@ -500,7 +500,7 @@ main {
    }
    #quotes {
       background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
-      padding: 10% 0 10% 15%;
+      padding: 5% 0 5% 15%;
       position: relative;
       .row {
          flex-flow: row;
@@ -837,6 +837,8 @@ footer {
                   }
                }
                .text-container {
+                  text-align: center;
+                  
                   margin-left: 0;
                   padding: 0 5px;
 
@@ -844,11 +846,19 @@ footer {
                      text-align: center;
                   }
                   .button__group {
-                     margin: 0 auto;
-                     max-width: 280px;
-
+                     margin: 2rem auto 0; 
+                     max-width: 267px;
+                     
+                     display: flex;
+                     flex-flow: row wrap;
+                     justify-content: center;
+                     
+                     .get__btn {
+                        margin-top: 0;
+                     }
                      .bookmark {
                         background-color: #3D4F9F;
+                        padding: 10px;
                      }
                   }
                }
@@ -1156,5 +1166,21 @@ footer {
    }
    100% {
       width: 30vw;
+   }
+}
+@-webkit-keyframes fading {
+   0% {
+      width: 100vw;
+   }
+   100% {
+      width: 0;
+   }
+}
+@keyframes fading {
+   0% {
+      width: 100vw;
+   }
+   100% {
+      width: 0;
    }
 }

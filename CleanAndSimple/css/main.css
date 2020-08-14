@@ -247,7 +247,7 @@ main #customers img {
 }
 
 main #manage {
-  padding: 11% 3%;
+  padding: 5% 3%;
   background-color: #F5F8FF;
 }
 
@@ -305,7 +305,7 @@ main #manage .row .button-group a:last-child:hover {
 }
 
 main #features {
-  padding: 11% 3%;
+  padding: 3%;
 }
 
 main #features .container {
@@ -573,7 +573,7 @@ main #blog .swiper-blog .swiper-slide .text-container .bookmark {
   line-height: 16px;
   color: #A6B6DA;
   margin-left: 15px;
-  padding: 10px 5px;
+  padding: 10px 15px;
   border-radius: 5px;
 }
 
@@ -599,7 +599,7 @@ main #blog .swiper-blog .swiper-button-next {
 main #quotes {
   background: -webkit-gradient(linear, left top, left bottom, from(#EAF0FF), to(#F6F9FF));
   background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
-  padding: 10% 0 10% 15%;
+  padding: 5% 0 5% 15%;
   position: relative;
 }
 
@@ -998,6 +998,7 @@ footer p {
     display: inline-flex;
   }
   main #blog .swiper-blog .swiper-slide .text-container {
+    text-align: center;
     margin-left: 0;
     padding: 0 5px;
   }
@@ -1005,11 +1006,25 @@ footer p {
     text-align: center;
   }
   main #blog .swiper-blog .swiper-slide .text-container .button__group {
-    margin: 0 auto;
-    max-width: 280px;
+    margin: 2rem auto 0;
+    max-width: 267px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #blog .swiper-blog .swiper-slide .text-container .button__group .get__btn {
+    margin-top: 0;
   }
   main #blog .swiper-blog .swiper-slide .text-container .button__group .bookmark {
     background-color: #3D4F9F;
+    padding: 10px;
   }
   main #blog .swiper-blog .swiper-button-prev:after,
   main #blog .swiper-blog .swiper-button-next:after {
@@ -1281,5 +1296,23 @@ footer p {
   }
   100% {
     width: 30vw;
+  }
+}
+
+@-webkit-keyframes fading {
+  0% {
+    width: 100vw;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes fading {
+  0% {
+    width: 100vw;
+  }
+  100% {
+    width: 0;
   }
 }
