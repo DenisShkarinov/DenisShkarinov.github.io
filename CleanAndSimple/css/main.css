@@ -1022,6 +1022,9 @@ footer p {
   main #blog .swiper-blog .swiper-slide .text-container .button__group .get__btn {
     margin-top: 0;
   }
+  main #blog .swiper-blog .swiper-slide .text-container .button__group a {
+    margin-top: 1.5rem;
+  }
   main #blog .swiper-blog .swiper-slide .text-container .button__group .bookmark {
     background-color: #3D4F9F;
     padding: 10px;
