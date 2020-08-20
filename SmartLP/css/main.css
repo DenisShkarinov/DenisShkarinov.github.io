@@ -200,15 +200,15 @@ main #home .swiper-main .swiper-slide {
 }
 
 main #home .swiper-main .swiper-slide:first-child {
-  background: url(../img/slider-1.webp) no-repeat center center;
+  background: url(../img/slider-1.jpg) no-repeat center center;
 }
 
 main #home .swiper-main .swiper-slide:nth-child(2) {
-  background: url(../img/slider-2.webp) no-repeat center center;
+  background: url(../img/slider-2.jpg) no-repeat center center;
 }
 
 main #home .swiper-main .swiper-slide:last-child {
-  background: url(../img/slider-3.webp) no-repeat center center;
+  background: url(../img/slider-3.jpg) no-repeat center center;
 }
 
 main #home .swiper-main .swiper-slide .swiper-title {
