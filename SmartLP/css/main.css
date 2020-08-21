@@ -196,7 +196,8 @@ main #home .swiper-main {
 }
 
 main #home .swiper-main .swiper-slide {
-  height: 600px;
+  max-height: 600px;
+  padding-bottom: 3rem;
 }
 
 main #home .swiper-main .swiper-slide:first-child {

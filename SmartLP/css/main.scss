@@ -170,7 +170,8 @@ main {
          position: relative;
          .swiper-slide {
             
-            height: 600px;
+            max-height: 600px;
+            padding-bottom: 3rem;
             &:first-child {
                background: url(../img/slider-1.webp) no-repeat center center;
             }
