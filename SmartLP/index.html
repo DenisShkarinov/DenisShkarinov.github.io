@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
    <link rel="stylesheet" href="css/main.css">
    <title>Smart LP</title>
 </head>
@@ -45,19 +45,19 @@
          </div>
       </nav>
       <div class="mobile__list">
-         <ul>
-            <li><a href="#home" class="logo"><img src="img/green_logo.png" alt="Smart_logo"></a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#pricing">pricing</a></li>
-            <li><a href="#clients">clients</a></li>
-            <li><a href="#contacts">contacts</a></li>
-         </ul>
+      
+         <a href="#home" class="logo"><img src="img/green_logo.png" alt="Smart_logo"></a>
+         <a href="#home">Home</a></li>
+         <a href="#about">about</a></li>
+         <a href="#portfolio">portfolio</a></li>
+         <a href="#pricing">pricing</a></li>
+         <a href="#clients">clients</a></li>
+         <a href="#contact">contacts</a></li>
+         
          <div class="social">
             <span>FOLLOW US </span>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook-f"></i>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
          </div>
       </div>
    </header>
@@ -114,18 +114,20 @@
       <div id="about">
          <div class="container">
             <div class="title-container">
-               <div class="image-container">
-                  <img src="img/services.png" alt="About">
+               <div class="image-container wow  animate__animated animate__fadeInUp" data-wow-offset="100"
+               data-wow-duration="1.5s">
+                  <img src="img/services.webp" alt="About">
                </div>
-               <h2>The future of designing starts here</h2>
-               <p>
+               <h2 class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay=".6s">The future of designing starts here</h2>
+               <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"
+               data-wow-delay="1s">
                   An open platform for presentations and content collaboration. Sign up to get early access.
                </p>
             </div>
             <div class="row">
-               <div class="about__item">
+               <div class="about__item wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
                   <div class="about__icon">
-                     <img src="img/icon-1.png" alt="Icon">
+                     <img src="img/icon-1.webp" alt="Icon">
                   </div>
                   <div class="text-container">
                      <h3>Powerful templates</h3>
@@ -135,9 +137,9 @@
                   </div>
                </div>
 
-               <div class="about__item">
+               <div class="about__item wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.4s">
                   <div class="about__icon">
-                     <img src="img/icon-2.png" alt="Icon">
+                     <img src="img/icon-2.webp" alt="Icon">
                   </div>
                   <div class="text-container">
                      <h3>Designed for everyone</h3>
@@ -147,9 +149,9 @@
                   </div>
                </div>
 
-               <div class="about__item">
+               <div class="about__item wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.5s">
                   <div class="about__icon">
-                     <img src="img/icon-3.png" alt="Icon">
+                     <img src="img/icon-3.webp" alt="Icon">
                   </div>
                   <div class="text-container">
                      <h3>Work anywhere</h3>
@@ -159,9 +161,9 @@
                   </div>
                </div>
 
-               <div class="about__item">
+               <div class="about__item wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.6s">
                   <div class="about__icon">
-                     <img src="img/icon-3.png" alt="Icon">
+                     <img src="img/icon-3.webp" alt="Icon">
                   </div>
                   <div class="text-container">
                      <h3>Work anywhere</h3>
@@ -193,7 +195,7 @@
             <div class="row portfolio">
                <div class="card-body branding-3 marketing-3">
                   <div class="image-container">
-                     <img src="img/portfolio-1.png" alt="Site #1">
+                     <img src="img/portfolio-1.webp" alt="Site #1">
                      <div class="portfolio-overlay">
                         <div class="portfolio-content">
                            <div class="portfolio-icon">
@@ -215,7 +217,7 @@
 
                <div class="card-body marketing-3 research-3">
                   <div class="image-container">
-                     <img src="img/portfolio-2.png" alt="Site #1">
+                     <img src="img/portfolio-2.webp" alt="Site #1">
                      <div class="portfolio-overlay">
                         <div class="portfolio-content">
                            <div class="portfolio-icon">
@@ -237,7 +239,7 @@
 
                <div class="card-body branding-3 marketing-3">
                   <div class="image-container">
-                     <img src="img/portfolio-3.png" alt="Site #1">
+                     <img src="img/portfolio-3.webp" alt="Site #1">
                      <div class="portfolio-overlay">
                         <div class="portfolio-content">
                            <div class="portfolio-icon">
@@ -259,7 +261,7 @@
 
                <div class="card-body planning-3 research-3">
                   <div class="image-container">
-                     <img src="img/portfolio-4.png" alt="Site #1">
+                     <img src="img/portfolio-4.webp" alt="Site #1">
                      <div class="portfolio-overlay">
                         <div class="portfolio-content">
                            <div class="portfolio-icon">
@@ -281,7 +283,7 @@
 
                <div class="card-body marketing-3">
                   <div class="image-container">
-                     <img src="img/portfolio-5.png" alt="Site #1">
+                     <img src="img/portfolio-5.webp" alt="Site #1">
                      <div class="portfolio-overlay">
                         <div class="portfolio-content">
                            <div class="portfolio-icon">
@@ -303,7 +305,7 @@
 
                <div class="card-body planning-3">
                   <div class="image-container">
-                     <img src="img/portfolio-6.png" alt="Site #1">
+                     <img src="img/portfolio-6.webp" alt="Site #1">
                      <div class="portfolio-overlay">
                         <div class="portfolio-content">
                            <div class="portfolio-icon">
@@ -335,7 +337,7 @@
                </p>
             </div>
             <div class="row">
-               <div class="card-body">
+               <div class="card-body wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">
                   <div class="pricing-icon">
                      <img src="img/wman.svg" alt="">
                   </div>
@@ -356,7 +358,7 @@
                   </div>
                </div>
 
-               <div class="card-body">
+               <div class="card-body wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
                   <div class="pricing-icon">
                      <img src="img/wman.svg" alt="">
                   </div>
@@ -377,7 +379,7 @@
                   </div>
                </div>
 
-               <div class="card-body">
+               <div class="card-body wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".6s">
                   <div class="pricing-icon">
                      <img src="img/wman.svg" alt="">
                   </div>
@@ -428,7 +430,7 @@
                <div class="swiper-wrapper">
                   <div class="swiper-slide">
                      <div class="author__img">
-                        <img src="img/author-1.jpg" alt="Name1">
+                        <img src="img/author-1.webp" alt="Name1">
                      </div>
                      <div class="text-container">
                         <p>
@@ -441,7 +443,7 @@
 
                   <div class="swiper-slide">
                      <div class="author__img">
-                        <img src="img/author-2.jpg" alt="Name2">
+                        <img src="img/author-2.webp" alt="Name2">
                      </div>
                      <div class="text-container">
                         <p>
@@ -454,7 +456,7 @@
 
                   <div class="swiper-slide">
                      <div class="author__img">
-                        <img src="img/author-3.jpg" alt="Name3">
+                        <img src="img/author-3.webp" alt="Name3">
                      </div>
                      <div class="text-container">
                         <p>
@@ -467,7 +469,7 @@
 
                   <div class="swiper-slide">
                      <div class="author__img">
-                        <img src="img/author-4.jpg" alt="Name4">
+                        <img src="img/author-4.webp" alt="Name4">
                      </div>
                      <div class="text-container">
                         <p>
@@ -505,7 +507,7 @@
             </div>
          </div>
       </div>
-      <div id="contacts">
+      <div id="contact">
          <div class="container">
             <div class="title-container">
                <h2>Get in touch</h2>
@@ -514,7 +516,7 @@
                </p>
             </div>
             <div class="row">
-               <div class="text-container">
+               <div class="text-container wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">
                   <h4>Lets talk about the project</h4>
                   <p>
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam unde repellendus delectus facilis quia consequatur maxime perferendis! Sequi, modi consequatur.
@@ -526,7 +528,7 @@
                         <a href="email:hello@ayroui.com">hello@ayroui.com</a></li>
                   </ul>
                </div>
-               <form action="#" method="post">
+               <form action="#" method="post" class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s"">
                   <div class="form__field">
                      <label for="name">Name</label>
                      <div class="input__item">
@@ -596,9 +598,11 @@
       </div>
    </footer>
 
+   <a href="#home" class="to__top"><i class="fas fa-angle-up"></i></a>
+
    <script src="https://kit.fontawesome.com/049b7c992f.js" crossorigin="anonymous"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/wow.min.js"></script>
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="js/isotope.js"></script>
 	<script src="js/script.min.js"></script>

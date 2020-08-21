@@ -200,15 +200,15 @@ main #home .swiper-main .swiper-slide {
 }
 
 main #home .swiper-main .swiper-slide:first-child {
-  background: url(../img/slider-1.jpg) no-repeat center center;
+  background: url(../img/slider-1.webp) no-repeat center center;
 }
 
 main #home .swiper-main .swiper-slide:nth-child(2) {
-  background: url(../img/slider-2.jpg) no-repeat center center;
+  background: url(../img/slider-2.webp) no-repeat center center;
 }
 
 main #home .swiper-main .swiper-slide:last-child {
-  background: url(../img/slider-3.jpg) no-repeat center center;
+  background: url(../img/slider-3.webp) no-repeat center center;
 }
 
 main #home .swiper-main .swiper-slide .swiper-title {
@@ -743,23 +743,23 @@ main #client-logo .logo-swiper img {
   width: 160px;
 }
 
-main #contacts {
+main #contact {
   padding: 5% 0;
 }
 
-main #contacts .text-container ul {
+main #contact .text-container ul {
   margin-top: 45px;
 }
 
-main #contacts .text-container ul a {
+main #contact .text-container ul a {
   color: #6c6c6c;
 }
 
-main #contacts .text-container ul a:hover {
+main #contact .text-container ul a:hover {
   color: #38f9d7;
 }
 
-main #contacts .text-container, main #contacts form {
+main #contact .text-container, main #contact form {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -767,7 +767,7 @@ main #contacts .text-container, main #contacts form {
   padding: 15px;
 }
 
-main #contacts .container .row {
+main #contact .container .row {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -776,15 +776,15 @@ main #contacts .container .row {
           justify-content: center;
 }
 
-main #contacts form .form__field {
+main #contact form .form__field {
   margin-bottom: 15px;
 }
 
-main #contacts form .form__field .input__item {
+main #contact form .form__field .input__item {
   position: relative;
 }
 
-main #contacts form .form__field label {
+main #contact form .form__field label {
   font-size: 12px;
   line-height: 18px;
   color: #6c6c6c;
@@ -792,7 +792,7 @@ main #contacts form .form__field label {
   display: inline-block;
 }
 
-main #contacts form .form__field input, main #contacts form .form__field textarea {
+main #contact form .form__field input, main #contact form .form__field textarea {
   width: 79%;
   height: 44px;
   border: 2px solid #a4a4a4;
@@ -803,17 +803,17 @@ main #contacts form .form__field input, main #contacts form .form__field textare
   color: #6c6c6c;
 }
 
-main #contacts form .form__field input:focus, main #contacts form .form__field textarea:focus {
+main #contact form .form__field input:focus, main #contact form .form__field textarea:focus {
   border: 2px solid #38f9d7;
 }
 
-main #contacts form .form__field textarea {
+main #contact form .form__field textarea {
   padding-top: 8px;
   height: 130px;
   resize: none;
 }
 
-main #contacts form .form__field i {
+main #contact form .form__field i {
   position: absolute;
   top: 11px;
   left: 13px;
@@ -822,7 +822,7 @@ main #contacts form .form__field i {
   color: #6c6c6c;
 }
 
-main #contacts form button {
+main #contact form button {
   width: 160px;
   height: 52px;
   border-radius: 50px;
@@ -834,7 +834,7 @@ main #contacts form button {
   color: #fff;
 }
 
-main #contacts form button:hover {
+main #contact form button:hover {
   background-position: right center;
   cursor: pointer;
 }
@@ -929,10 +929,10 @@ footer .col ul li a:hover {
   main #clients .swiper-pagination {
     bottom: 2%;
   }
-  main #contacts .text-container, main #contacts form {
+  main #contact .text-container, main #contact form {
     max-width: 100%;
   }
-  main #contacts form {
+  main #contact form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -944,7 +944,7 @@ footer .col ul li a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main #contacts form button {
+  main #contact form button {
     margin: 0 auto;
   }
   footer .container .row {
@@ -990,34 +990,32 @@ footer .col ul li a:hover {
     text-transform: uppercase;
   }
   header .mobile__list__active {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed;
+    height: 100vh;
     width: 100%;
     top: 74px;
     background-color: #f4f6f7;
     z-index: 100;
   }
-  header .mobile__list__active ul {
-    height: 100%;
+  header .mobile__list__active a {
+    color: #121212;
+    font-weight: 600;
+    padding: 1rem 0;
+    text-transform: uppercase;
   }
-  header .mobile__list__active ul li {
-    margin: 1rem 0;
-    border-bottom: 1px solid #cbced1;
-    width: 80%;
-    text-align: center;
-  }
-  header .mobile__list__active ul li .logo img {
-    margin-left: 0;
-  }
-  header .mobile__list__active ul li:first-child {
-    border-bottom: none;
-  }
-  header .mobile__list__active ul li a {
-    color: #111;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    padding: 11px 16px;
+  header .mobile__list__active i {
+    color: #38f9d7;
+    font-size: 25px;
   }
   header nav .desktop-menu {
     display: none;
@@ -1159,4 +1157,29 @@ footer .col ul li a:hover {
 
 .loaded .preloader {
   display: none;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.to__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  width: 45px;
+  height: 45px;
+  background-color: #38f9d7;
+  border-radius: 50%;
+  color: #121212;
+  z-index: 1;
 }

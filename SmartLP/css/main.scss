@@ -172,13 +172,13 @@ main {
             
             height: 600px;
             &:first-child {
-               background: url(../img/slider-1.jpg) no-repeat center center;
+               background: url(../img/slider-1.webp) no-repeat center center;
             }
             &:nth-child(2) {
-               background: url(../img/slider-2.jpg) no-repeat center center;
+               background: url(../img/slider-2.webp) no-repeat center center;
             }
             &:last-child {
-               background: url(../img/slider-3.jpg) no-repeat center center ; 
+               background: url(../img/slider-3.webp) no-repeat center center ; 
             }
 
             .swiper-title {
@@ -630,7 +630,7 @@ main {
          }
       }
    }
-   #contacts {
+   #contact {
       padding: 5% 0;
 
       .text-container {
@@ -803,7 +803,7 @@ footer {
             bottom: 2%;
          }
       }
-      #contacts {
+      #contact {
          .text-container, form {
             max-width: 100%;
          }
@@ -857,34 +857,25 @@ footer {
          }
       }
       .mobile__list__active {
-         display: block;
+         display: flex;
+         flex-flow: column;
+         align-items: center;
          position: fixed;
+         height: 100vh;
          width: 100%;
          top: 74px;
          background-color: #f4f6f7;
          z-index: 100;
 
-         ul {
-            height: 100%;
-            li {
-               margin: 1rem 0; 
-               border-bottom: 1px solid #cbced1;
-               width: 80%;
-               text-align: center;
-               .logo img {
-                  margin-left: 0;
-               }
-               &:first-child {
-                  border-bottom: none;
-               }
-               a {
-                  color: #111;
-                  font-size: 16px;
-                  line-height: 24px;
-                  font-weight: 700;
-                  padding: 11px 16px;
-               }
-            }
+         a {
+            color: #121212;
+            font-weight: 600;
+            padding: 1rem 0;
+            text-transform: uppercase;
+         }
+         i {
+            color: #38f9d7;
+            font-size: 25px;
          }
       }
       nav {
@@ -1022,4 +1013,25 @@ footer {
 
 .loaded .preloader {
    display: none;
+}
+
+.wow {
+   visibility: hidden;
+}
+.to__top {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: fixed;
+   bottom: 1%;
+   right: 1%;
+   
+   width: 45px;
+   height: 45px;
+   background-color: #38f9d7;
+   border-radius: 50%;
+   color: #121212;
+
+   z-index: 1;
 }
