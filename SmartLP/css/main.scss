@@ -169,8 +169,8 @@ main {
       .swiper-main {
          position: relative;
          .swiper-slide {
-            
             height: 600px;
+            
             &:first-child {
                background: url(../img/slider-1.webp) no-repeat center center;
             }
@@ -276,6 +276,7 @@ main {
          align-items: center;
          flex-grow: 1;
          max-width: 420px;
+         margin-bottom: 2rem;
 
          .text-container {
             padding-left: 30px;  
@@ -309,6 +310,7 @@ main {
          }
       }
       .row {
+         justify-content: center;
          .portfolio-menu {
             margin: 0 auto;
             display: flex;
@@ -357,12 +359,8 @@ main {
                }
             }
          }
-         .portfolio {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-         }
          .card-body {
+            zoom: .6;
             max-width: 350px;
             margin-top: 30px;
             padding: 0 15px;
@@ -630,7 +628,7 @@ main {
          }
       }
    }
-   #contacts {
+   #contact {
       padding: 5% 0;
 
       .text-container {
@@ -752,9 +750,6 @@ footer {
    }
 }
 @media only screen and (min-width:320px) and (max-width: 640px) {
-   .container {
-      padding: 5% 3%;
-   }
    main {
       #about {
          .title-container {
@@ -768,6 +763,7 @@ footer {
          }
       }
       #portfolio {
+         
          .card-body {
             right: 0;
             margin: 0 auto;
@@ -803,7 +799,7 @@ footer {
             bottom: 2%;
          }
       }
-      #contacts {
+      #contact {
          .text-container, form {
             max-width: 100%;
          }
@@ -857,34 +853,25 @@ footer {
          }
       }
       .mobile__list__active {
-         display: block;
+         display: flex;
+         flex-flow: column;
+         align-items: center;
          position: fixed;
+         height: 100vh;
          width: 100%;
          top: 74px;
          background-color: #f4f6f7;
          z-index: 100;
 
-         ul {
-            height: 100%;
-            li {
-               margin: 1rem 0; 
-               border-bottom: 1px solid #cbced1;
-               width: 80%;
-               text-align: center;
-               .logo img {
-                  margin-left: 0;
-               }
-               &:first-child {
-                  border-bottom: none;
-               }
-               a {
-                  color: #111;
-                  font-size: 16px;
-                  line-height: 24px;
-                  font-weight: 700;
-                  padding: 11px 16px;
-               }
-            }
+         a {
+            color: #121212;
+            font-weight: 600;
+            padding: 1rem 0;
+            text-transform: uppercase;
+         }
+         i {
+            color: #38f9d7;
+            font-size: 25px;
          }
       }
       nav {
@@ -949,6 +936,13 @@ footer {
             }
          }
       }
+      #portfolio {
+         .row {
+            .card-body {
+               max-width: 280px;
+            }
+         }
+      }
       #pricing {
          .row {
             justify-content: center;
@@ -970,6 +964,10 @@ footer {
          }
       }
    }
+   .container {
+      padding: 5% 3%;
+   } 
+   
 }
 
 @media only screen and (min-width: 1280px) {
@@ -1022,4 +1020,25 @@ footer {
 
 .loaded .preloader {
    display: none;
+}
+
+.wow {
+   visibility: hidden;
+}
+.to__top {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: fixed;
+   bottom: 1%;
+   right: 1%;
+   
+   width: 45px;
+   height: 45px;
+   background-color: #38f9d7;
+   border-radius: 50%;
+   color: #121212;
+
+   z-index: 1;
 }
