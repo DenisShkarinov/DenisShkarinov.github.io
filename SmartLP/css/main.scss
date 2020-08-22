@@ -169,9 +169,8 @@ main {
       .swiper-main {
          position: relative;
          .swiper-slide {
+            height: 600px;
             
-            max-height: 600px;
-            padding-bottom: 3rem;
             &:first-child {
                background: url(../img/slider-1.webp) no-repeat center center;
             }
@@ -277,6 +276,7 @@ main {
          align-items: center;
          flex-grow: 1;
          max-width: 420px;
+         margin-bottom: 2rem;
 
          .text-container {
             padding-left: 30px;  
@@ -310,6 +310,7 @@ main {
          }
       }
       .row {
+         justify-content: center;
          .portfolio-menu {
             margin: 0 auto;
             display: flex;
@@ -364,6 +365,7 @@ main {
             justify-content: center;
          }
          .card-body {
+            zoom: .6;
             max-width: 350px;
             margin-top: 30px;
             padding: 0 15px;
@@ -753,9 +755,6 @@ footer {
    }
 }
 @media only screen and (min-width:320px) and (max-width: 640px) {
-   .container {
-      padding: 5% 3%;
-   }
    main {
       #about {
          .title-container {
@@ -769,6 +768,7 @@ footer {
          }
       }
       #portfolio {
+         
          .card-body {
             right: 0;
             margin: 0 auto;
@@ -941,6 +941,13 @@ footer {
             }
          }
       }
+      #portfolio {
+         .row {
+            .card-body {
+               max-width: 280px;
+            }
+         }
+      }
       #pricing {
          .row {
             justify-content: center;
@@ -962,6 +969,10 @@ footer {
          }
       }
    }
+   .container {
+      padding: 5% 3%;
+   } 
+   
 }
 
 @media only screen and (min-width: 1280px) {

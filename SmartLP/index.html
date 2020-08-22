@@ -184,16 +184,17 @@
                </p>
             </div>
             <div class="row">
-               <ul class="portfolio-menu">
-                  <li class="active__item" data-filter="*">all work</li>
-                  <li data-filter=".branding-3">branding</li>
-                  <li data-filter=".marketing-3">marketing</li>
-                  <li data-filter=".planning-3">planning</li>
-                  <li data-filter=".research-3">research</li>
+               <ul class="portfolio-menu" id="filter">
+                  <li class="active__item" data-filter="all">all work</li>
+                  <li data-filter="branding-3">branding</li>
+                  <li data-filter="marketing-3">marketing</li>
+                  <li data-filter="planning-3">planning</li>
+                  <li data-filter="research-3">research</li>
                </ul>
             </div>
             <div class="row portfolio">
-               <div class="card-body branding-3 marketing-3">
+               <div class="card-body branding-3 marketing-3"
+               data-filter="branding-3">
                   <div class="image-container">
                      <img src="img/portfolio-1.webp" alt="Site #1">
                      <div class="portfolio-overlay">
@@ -215,7 +216,7 @@
                   </div>
                </div>
 
-               <div class="card-body marketing-3 research-3">
+               <div id="card" class="card-body marketing-3 research-3">
                   <div class="image-container">
                      <img src="img/portfolio-2.webp" alt="Site #1">
                      <div class="portfolio-overlay">
@@ -237,7 +238,7 @@
                   </div>
                </div>
 
-               <div class="card-body branding-3 marketing-3">
+               <div id="card" class="card-body branding-3 marketing-3">
                   <div class="image-container">
                      <img src="img/portfolio-3.webp" alt="Site #1">
                      <div class="portfolio-overlay">
@@ -259,7 +260,7 @@
                   </div>
                </div>
 
-               <div class="card-body planning-3 research-3">
+               <div id="card" class="card-body planning-3 research-3">
                   <div class="image-container">
                      <img src="img/portfolio-4.webp" alt="Site #1">
                      <div class="portfolio-overlay">
@@ -281,7 +282,7 @@
                   </div>
                </div>
 
-               <div class="card-body marketing-3">
+               <div id="card" class="card-body marketing-3">
                   <div class="image-container">
                      <img src="img/portfolio-5.webp" alt="Site #1">
                      <div class="portfolio-overlay">
@@ -303,7 +304,7 @@
                   </div>
                </div>
 
-               <div class="card-body planning-3">
+               <div id="card" class="card-body planning-3">
                   <div class="image-container">
                      <img src="img/portfolio-6.webp" alt="Site #1">
                      <div class="portfolio-overlay">
@@ -604,7 +605,6 @@
    <script src="js/jquery.min.js"></script>
    <script src="js/wow.min.js"></script>
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <script src="js/isotope.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
 </html>

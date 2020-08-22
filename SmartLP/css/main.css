@@ -196,8 +196,7 @@ main #home .swiper-main {
 }
 
 main #home .swiper-main .swiper-slide {
-  max-height: 600px;
-  padding-bottom: 3rem;
+  height: 600px;
 }
 
 main #home .swiper-main .swiper-slide:first-child {
@@ -318,6 +317,7 @@ main #about .about__item {
       -ms-flex-positive: 1;
           flex-grow: 1;
   max-width: 420px;
+  margin-bottom: 2rem;
 }
 
 main #about .about__item .text-container {
@@ -351,6 +351,12 @@ main #portfolio .title-container p {
   line-height: 24px;
   color: #6c6c6c;
   margin-top: 24px;
+}
+
+main #portfolio .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main #portfolio .row .portfolio-menu {
@@ -430,6 +436,7 @@ main #portfolio .row .portfolio {
 }
 
 main #portfolio .row .card-body {
+  zoom: .6;
   max-width: 350px;
   margin-top: 30px;
   padding: 0 15px;
@@ -879,9 +886,6 @@ footer .col ul li a:hover {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 640px) {
-  .container {
-    padding: 5% 3%;
-  }
   main #about .title-container {
     padding-bottom: 10%;
   }
@@ -1084,6 +1088,9 @@ footer .col ul li a:hover {
   main #home .swiper-main .swiper-button-next {
     display: none;
   }
+  main #portfolio .row .card-body {
+    max-width: 280px;
+  }
   main #pricing .row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1101,6 +1108,9 @@ footer .col ul li a:hover {
   header .logo img {
     margin-left: 10%;
     width: 150px;
+  }
+  .container {
+    padding: 5% 3%;
   }
 }
 
