@@ -7,3 +7,5 @@
 [Create & Simple](https://denisshkarinov.github.io/CleanAndSimple/)
 
 [SmartLP](https://denisshkarinov.github.io/SmartLP/)
+
+[TravelJapanLP](https://denisshkarinov.github.io/TravelLP/)
