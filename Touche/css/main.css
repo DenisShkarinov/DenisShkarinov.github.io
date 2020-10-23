@@ -1,0 +1,854 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*, :before, :after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.logo a {
+  color: #8eb640;
+  font-size: 36px;
+  font-family: "Comic Neue", cursive;
+  line-height: 20px;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+body h1, body h2, body h3, body h4, body h5 {
+  color: #333333;
+  font-weight: 500;
+}
+
+body h2 {
+  font-size: 34px;
+}
+
+body h3 {
+  font-size: 20px;
+}
+
+.hide {
+  display: none;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.on {
+  background-color: #262626 !important;
+}
+
+.on .desktop-menu {
+  height: 60px;
+}
+
+.btn {
+  background-color: #8eb640;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  padding: 14px 20px;
+  text-transform: uppercase;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header nav {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+header nav .desktop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90px;
+}
+
+header nav .desktop-menu .desktop-menu__nav {
+  display: inherit;
+}
+
+header nav .desktop-menu .desktop-menu__nav li a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 15px;
+  text-transform: uppercase;
+}
+
+header nav .desktop-menu .desktop-menu__nav li a:hover {
+  color: #8eb640;
+}
+
+header nav .mobile-menu, header nav .mobile-menu__nav {
+  display: none;
+}
+
+h2, .title {
+  position: relative;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+
+h2:after, .title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #8eb640;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 0;
+}
+
+.title:after {
+  left: 0;
+  right: 0;
+  margin: 20px auto 40px;
+}
+
+main #intro {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/intro-bg.webp) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/intro-bg.webp) center center no-repeat;
+  background-size: cover;
+  height: 769px;
+}
+
+main #intro .container {
+  height: 100%;
+}
+
+main #intro .container .text-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+main #intro .container .text-content h1 {
+  color: #ffffff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 10em;
+  font-weight: 300;
+}
+
+main #intro .container .text-content p {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+main #intro .container .text-content h3 {
+  padding: 20px 0 10px;
+}
+
+main #about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+main #about .row .about-text img {
+  max-width: 500px;
+  width: 50%;
+  float: left;
+  margin: 4px 10px 2px 0px;
+  padding: 6px;
+}
+
+main #about .row .about-text h2 {
+  text-align: center;
+}
+
+main #about .row .about-text h2:after {
+  content: none;
+}
+
+main #about .row .about-text p {
+  color: #777777;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 15px 0 30px;
+}
+
+main #menu .menu-title {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/menu-bg.webp) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/menu-bg.webp) center/cover no-repeat;
+}
+
+main #menu .col {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  padding: 80px 0 0;
+}
+
+main #menu .col .title {
+  font-size: 26px;
+  text-align: center;
+}
+
+main #menu .col .menu-section {
+  padding: 0 23px;
+}
+
+main #menu .col .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 35px 0;
+}
+
+main #menu .col .menu-item h3, main #menu .col .menu-item span {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 600;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main #menu .col .menu-item span {
+  text-align: right;
+}
+
+main #menu .col .menu-item .menu-item__description {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border-top: 1px dashed #777;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
+  color: #777777;
+}
+
+main #gallery {
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+
+main #gallery .menu-title {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/gallery-bg.webp) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/gallery-bg.webp) center/cover no-repeat;
+  margin-bottom: 50px;
+}
+
+main #gallery .categories .cat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #gallery .categories .cat li {
+  background-color: #eeeeee;
+  color: #999999;
+  padding: 12px 24px;
+  margin: 15px 10px;
+  text-transform: uppercase;
+}
+
+main #gallery .categories .cat li:hover {
+  background-color: #8eb640;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+main #gallery .categories .cat .active {
+  background-color: #8eb640;
+  color: #ffffff;
+}
+
+main #gallery .portfolio-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #gallery .portfolio-items .col {
+  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  margin: 10px;
+  width: 360px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main #gallery .portfolio-items .col .portfolio-item {
+  height: 218px;
+  position: relative;
+}
+
+main #gallery .portfolio-items .col .portfolio-item a {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+main #gallery .portfolio-items .col .portfolio-item a img {
+  position: absolute;
+  width: 100%;
+}
+
+main #gallery .portfolio-items .col .portfolio-item a .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30% 0 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #gallery .portfolio-items .col .portfolio-item a .hover-text h4 {
+  color: #ffffff;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-transform: uppercase;
+}
+
+main #gallery .portfolio-items .col .portfolio-item a:hover .hover-text {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+main #chefs {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/team-bg.webp) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/team-bg.webp) center/cover no-repeat;
+  padding-bottom: 120px;
+}
+
+main #chefs .chefs-title {
+  height: 300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 300px;
+}
+
+main #chefs .chefs-title h2, main #chefs .chefs-title p {
+  color: #ffffff;
+  text-align: center;
+}
+
+main #chefs .chefs-title h2:after {
+  left: 0;
+  right: 0;
+  margin: 20px auto 40px;
+}
+
+main #chefs .chefs-title p {
+  font-size: 22px;
+}
+
+main #chefs .col {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  padding: 0 15px;
+}
+
+main #chefs .col .img-box img {
+  display: block;
+  margin: 0 auto;
+}
+
+main #chefs .col .caption {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 10px 9px 9px;
+  text-align: center;
+}
+
+main #chefs .col .caption h3 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+main #chefs .col .caption p {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+main #call {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #8eb640), to(#779936));
+  background: linear-gradient(to bottom, #8eb640 50%, #779936 100%);
+  padding: 90px 0;
+  text-align: center;
+}
+
+main #call h2 {
+  font-weight: 400;
+}
+
+main #call h2:after {
+  content: none;
+}
+
+main #call h2, main #call a {
+  color: #ffffff;
+}
+
+main #call a {
+  font-weight: 700;
+}
+
+main #contact {
+  padding: 100px 0 60px 0;
+  background: #F6F6F6;
+}
+
+main #contact .title-box {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+main #contact .title-box h2:after {
+  margin: 20px auto 30px;
+}
+
+main #contact .title-box p {
+  color: #777777;
+  font-size: 22px;
+}
+
+main #contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+main #contact form input {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  width: 100%;
+  padding: 6px 12px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #444;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ddd;
+}
+
+main #contact form textarea {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+  padding: 6px 12px;
+  margin: 0 10px 30px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #444;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ddd;
+}
+
+main #contact form button {
+  border: none;
+  cursor: pointer;
+}
+
+footer .info {
+  background-color: #262626;
+  padding: 50px 0;
+}
+
+footer .info .col {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+footer .info .col h3 {
+  color: #8eb640;
+  padding-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer .info .col p {
+  color: #ffffff;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+footer .info .col p a {
+  color: #ffffff;
+  border-bottom: 1px solid #fff;
+}
+
+footer .social {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #8eb640), to(#779936));
+  background: linear-gradient(to bottom, #8eb640 50%, #779936 100%);
+  padding: 20px 0;
+}
+
+footer .social a {
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+footer .social a i {
+  font-size: 26px;
+  padding: 4px;
+}
+
+footer .social p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+    padding: 0 5%;
+  }
+  header nav {
+    max-width: 100%;
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  .container {
+    padding: 0 3%;
+  }
+  header {
+    padding: 0 5%;
+    width: 100vw;
+  }
+  header nav .desktop-menu {
+    display: none;
+  }
+  header nav .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+  }
+  header nav .mobile-menu .burger__btn {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+  }
+  header nav .mobile-menu .burger__btn span, header nav .mobile-menu .burger__btn span:before, header nav .mobile-menu .burger__btn span:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #ffffff;
+    width: 20px;
+    height: 2px;
+  }
+  header nav .mobile-menu .burger__btn span:before, header nav .mobile-menu .burger__btn span:after {
+    content: "";
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header nav .mobile-menu .burger__btn span:before {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+  }
+  header nav .mobile-menu .burger__btn span:after {
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+  }
+  header nav .mobile-menu .burger__btn__active span {
+    height: 0;
+  }
+  header nav .mobile-menu .burger__btn__active span:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header nav .mobile-menu .burger__btn__active span:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header nav .mobile-menu__nav__active {
+    display: block;
+    padding: 1rem 0;
+  }
+  header nav .mobile-menu__nav__active li {
+    padding: 10px 15px;
+  }
+  header nav .mobile-menu__nav__active li a {
+    color: #ddd;
+    text-transform: uppercase;
+  }
+  main #intro {
+    height: 720px;
+  }
+  main #intro .container .text-content h1 {
+    font-size: 5em;
+  }
+  main #intro .container .text-content p {
+    text-align: center;
+  }
+  main #menu .col {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  main #gallery .categories .cat {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main #gallery .categories .cat li {
+    margin: 5px 10px;
+  }
+  main #chefs .col .caption {
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  h2 {
+    text-align: center;
+  }
+  h2:after {
+    margin: 15px auto 30px;
+  }
+  main #about {
+    padding: 70px 0;
+  }
+  main #about .row .about-text img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  main #about .row .about-text p {
+    text-align: justify;
+  }
+  main #about .row .about-text h3 {
+    text-align: center;
+  }
+  main #gallery .portfolio-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  main #gallery .portfolio-items .col {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 300px;
+  }
+  main #contact form {
+    padding: 0 5%;
+  }
+  main #contact form input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  main #contact form textarea {
+    margin: 0 0 30px 0;
+  }
+  footer .info .col {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1180px) {
+  main #about .row .col {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    margin: 0 1%;
+  }
+  main #about .row .col img {
+    width: 100%;
+  }
+  main #about .row .col .about-text h2 {
+    text-align: center;
+  }
+  main #about .row .col .about-text h2:after {
+    margin: 20px auto 30px;
+  }
+}
+
+.menu-title {
+  height: 300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-title h2, .menu-title p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.menu-title h2:after {
+  left: 0;
+  right: 0;
+  margin: 20px auto 40px;
+}
+
+.menu-title p {
+  font-size: 22px;
+}
