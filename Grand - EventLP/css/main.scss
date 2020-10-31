@@ -41,13 +41,14 @@ body {
       }
    }
 }
+
 // header's style
 header {
    position: fixed;
    width: 100vw;
    box-shadow: 0 3px 6px 3px rgba(0,0,0,0.06);
 
-   z-index: 1111;
+   z-index: 11;
    nav {
       max-width: 1170px;
       padding: 0 2%;
@@ -107,6 +108,18 @@ header {
          left: 0; right: 0;
          width: 100%;
          margin: 0 auto;
+
+         ul {
+            padding: 15px 20px;
+
+            li {
+               padding: 5px 0;
+               a {
+                  color: #222222;
+                  text-transform: uppercase;
+               }
+            }
+         }
       }
    }
 }
@@ -1176,17 +1189,7 @@ footer {
             transform: translateY(65px);
             transition: all .6s ease-in;
             box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-            ul {
-               padding: 15px 20px;
-
-               li {
-                  padding: 5px 0;
-                  a {
-                     color: #222222;
-                     text-transform: uppercase;
-                  }
-               }
-            }
+            
          }
       }
    }
@@ -1201,7 +1204,7 @@ footer {
    }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 720px) {
+@media only screen and (min-width: 320px) and (max-width: 719px) {
    .container {
       padding: 0 15px;
    }
@@ -1354,6 +1357,11 @@ footer {
          .col {
             flex-basis: 100%;
          }
+         .video {
+            img {
+               width: 100%;
+            }
+         }
       }
       #blog {
          .blog-card {
@@ -1401,7 +1409,7 @@ footer {
       }
    }
 }
-@media only screen and (min-width: 320px) and (max-width: 720px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 719px) and (orientation: landscape) {
    main {
       #shedule {
          .event-tab {
@@ -1422,6 +1430,70 @@ footer {
       }
    }
    
+}
+@media only screen and (min-width: 720px) and (max-width: 1000px) {
+   main {
+      #home {
+         .swiper-container .swiper-slide {
+            .text-content {
+               h1 {
+                  line-height: 50px;
+                  text-align: center;
+               }
+            }
+         }
+      }
+      #about {
+         .about-item {
+            flex-basis: 45%;
+            margin-bottom: 25px;
+
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+      #shedule {
+         .event-tab .tab{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            margin-bottom: 35px;
+
+            li a {
+               width: 170px;
+            }
+         }
+      }
+      #gallery {
+         .gallery-item {
+            flex-basis: 40%;
+         }
+      }
+      #faq {
+         #accordion {
+            flex-basis: 70%;
+         }
+      }
+      #blog {
+         .blog-card {
+            flex-basis: 40%;
+         }
+      }
+      #contact {
+         h2 {
+            text-align: center;
+         }
+      }
+   }
+   footer {
+      .col {
+         flex-basis: 40%;
+         &:nth-child(1),&:nth-child(2) {
+            margin-bottom: 25px;
+         }
+      }
+   }
 }
 // different elements
 // active-item
@@ -1505,4 +1577,97 @@ footer {
    &:hover {
       background-color: rgba(255,255,255,.3);
    }
+}
+
+// preloader
+
+.preloader {
+   /*фиксированное позиционирование*/
+   position: fixed;
+   /* координаты положения */
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   /* фоновый цвет элемента */
+   background: #e0e0e0;
+   /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+   z-index: 1001;
+}
+
+.preloader__row {
+   position: relative;
+   top: 50%;
+   left: 50%;
+   width: 70px;
+   height: 70px;
+   margin-top: -35px;
+   margin-left: -35px;
+   text-align: center;
+   -webkit-animation: preloader-rotate 2s infinite linear;
+           animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+   position: absolute;
+   display: inline-block;
+   top: 0;
+   background-color: #337ab7;
+   border-radius: 100%;
+   width: 35px;
+   height: 35px;
+   -webkit-animation: preloader-bounce 2s infinite ease-in-out;
+           animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+   top: auto;
+   bottom: 0;
+   -webkit-animation-delay: -1s;
+           animation-delay: -1s;
+}
+
+@-webkit-keyframes preloader-rotate {
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes preloader-rotate {
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@-webkit-keyframes preloader-bounce {
+
+   0%,
+   100% {
+      transform: scale(0);
+   }
+
+   50% {
+      transform: scale(1);
+   }
+}
+
+@keyframes preloader-bounce {
+
+   0%,
+   100% {
+      transform: scale(0);
+   }
+
+   50% {
+      transform: scale(1);
+   }
+}
+
+.loaded_hiding .preloader {
+   transition: 0.3s opacity;
+   opacity: 0;
+}
+
+.loaded .preloader {
+   display: none;
 }

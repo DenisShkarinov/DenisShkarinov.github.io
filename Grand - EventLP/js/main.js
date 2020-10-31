@@ -1,5 +1,13 @@
 "use strict";
 
+window.onload = function () {
+  document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+  }, 500);
+}
+
 let header = document.querySelector('header');
 let backToTop = document.querySelector('.back-to__top');
 
@@ -17,8 +25,13 @@ window.onscroll = function() {
 }
 
 let mySwiper = new Swiper('.swiper-container', {
-  //autoplay: true,
-
+  autoplay: {
+    delay: 5000,
+    waitForTransition: true
+  },
+  fadeEffect: {
+    crossFade: true
+  },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -108,4 +121,8 @@ $(burger).on('click', function(e) {
   burger.classList.toggle('burger__btn__active');
   mobileMenu.classList.toggle('mobile-menu__active');
   
+  $('.mobile-menu__active ul li > a').click(function() {
+    burger.classList.remove('burger__btn__active');
+    mobileMenu.classList.remove('mobile-menu__active');
+  })
 })
