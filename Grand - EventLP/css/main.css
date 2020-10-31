@@ -1445,6 +1445,21 @@ footer .col .social-links li a {
     font-size: 35px;
     line-height: 35px;
   }
+  main #countdown-timer .time-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   main #services .services-item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
