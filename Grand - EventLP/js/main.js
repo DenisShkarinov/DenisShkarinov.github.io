@@ -1,4 +1,4 @@
-"use strict";window.onload=function(){document.body.classList.add('loaded_hiding');window.setTimeout(function(){document.body.classList.add('loaded');document.body.classList.remove('loaded_hiding');},500);}
+"use strict";
 let header=document.querySelector('header');let backToTop=document.querySelector('.back-to__top');window.onscroll=function(){if(window.pageYOffset>=150){header.classList.add('turn__bg');}else{header.classList.remove('turn__bg');}
 if(window.pageYOffset>=350){backToTop.classList.add('show');}else{backToTop.classList.remove('show');}}
 let mySwiper=new Swiper('.swiper-container',{autoplay:{delay:5000,waitForTransition:true},fadeEffect:{crossFade:true},pagination:{el:'.swiper-pagination',clickable:true},navigation:{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev',}})
