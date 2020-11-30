@@ -101,9 +101,11 @@ header {
       .mobile-menu__nav {
          position: fixed;
          transform: translateY(-100vh);
+         transition: all .4s;
          opacity: 0;
          visibility: hidden;
          background-color: #ffffff;
+         border-radius: 0 0 15px 15px;
          max-width: 690px;
          left: 0; right: 0;
          width: 100%;

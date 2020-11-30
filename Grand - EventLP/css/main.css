@@ -156,9 +156,12 @@ header nav .mobile-menu__nav {
   position: fixed;
   -webkit-transform: translateY(-100vh);
           transform: translateY(-100vh);
+  -webkit-transition: all .4s;
+  transition: all .4s;
   opacity: 0;
   visibility: hidden;
   background-color: #ffffff;
+  border-radius: 0 0 15px 15px;
   max-width: 690px;
   left: 0;
   right: 0;
