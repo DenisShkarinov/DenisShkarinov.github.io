@@ -262,7 +262,7 @@ main section {
 
 main section .section-heading {
   padding-bottom: 50px;
-  border-bottom: 1px solid #e5ebf2;
+  border-bottom: 2px solid #e5ebf2;
 }
 
 main section .section-heading h2 {
@@ -417,9 +417,60 @@ main #education .col:last-child .timeline .line {
   max-width: 50%;
 }
 
+main #skills {
+  border-bottom: 2px solid #e5ebf2;
+}
+
+main #skills .container {
+  padding-top: 50px;
+}
+
 main #skills .col {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+main #skills .col .bar-wrapper {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+main #skills .col .bar-wrapper .single-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+main #skills .col .bar-wrapper .single-progress .progress {
+  border-radius: 3px;
+  overflow: visible;
+  background: #e6ecf3;
+  height: 8px;
+  margin-top: 15px;
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+}
+
+main #skills .col .bar-wrapper .single-progress .progress .progress-bar {
+  height: 8px;
+  background-color: #d92cf9;
+  border-radius: 3px;
+  -webkit-transition: width 1.5s ease-in-out;
+  transition: width 1.5s ease-in-out;
+}
+
+main #skills .col .bar-wrapper .single-progress h3 {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  color: #a606c3;
+  position: relative;
+  top: 6px;
+  left: 20px;
 }
 
 @media only screen and (max-width: 1000px) {

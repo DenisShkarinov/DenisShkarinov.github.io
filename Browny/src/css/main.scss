@@ -182,7 +182,7 @@ main {
 
       .section-heading {
          padding-bottom: 50px;
-         border-bottom: 1px solid #e5ebf2;
+         border-bottom: 2px solid #e5ebf2;
 
          h2 {
             text-align: center;
@@ -310,11 +310,50 @@ main {
       }
    }
    #skills {
+      .container {
+         padding-top: 50px;
+      }
       .col {
          flex-basis: 50%;
 
-         
+         .bar-wrapper {
+            font-weight: 400;
+            font-size: 16px;
+            text-transform: uppercase;
+            .single-progress {
+               display: flex;
+               align-items: center;
+               margin-bottom: 1.5rem;
+               .progress {
+                  border-radius: 3px;
+                  overflow: visible;
+                  background: #e6ecf3;
+                  height: 8px;
+                  margin-top: 15px;
+                  flex-basis: 85%;
+
+                  .progress-bar {
+                     height: 8px;
+                     background-color: $pink;
+                     border-radius: 3px;
+                     transition: width 1.5s ease-in-out;
+                  }
+                  
+               }
+               h3 {
+                  flex-basis: 10%;
+                  color: #a606c3;
+                  position: relative;
+                  top: 6px;
+                  left: 20px;
+               }
+            }
+         }
       }
+      border-bottom: 2px solid #e5ebf2;
+   }
+   #experience {
+
    }
 }
 
