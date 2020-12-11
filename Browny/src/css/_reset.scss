@@ -19,7 +19,7 @@ a {
    .row {
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;
+      justify-content: space-between;
    }
    .column {
       display: flex;
