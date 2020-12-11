@@ -11,6 +11,7 @@ $title: #43485c;
 $back: #f9fbfd;
 $pink: #d92cf9;
 $button: #b636ff;
+$deepBlue: #1f2c6c;
 
 body {
    background-color: #ffffff;
@@ -216,7 +217,103 @@ main {
             &:last-child {
                flex-basis: 40%;
             }
+            .image-container {
+               position: relative;
+               .image-list__icons {
+                  background-color: $deepBlue;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: absolute;
+                  bottom: 0; left: 0;
+                  height: 90px;
+                  ul > li {
+                     display: inline-block;
+                     margin-left: 20px;
+                     border: 2px solid #fff;
+                     padding: 5px;
+                     border-radius: 10px;
+
+                     img {
+                        width: 20px;
+                        height: 20px;
+                     }
+                     &:first-child {
+                        margin-left: 0;
+                     }
+                  }
+               }
+            }
          }
+      }
+   }
+   #education {
+      background-color: $back;
+
+      .container {
+         padding-top: 50px;
+      }
+      .col {
+         flex-basis: 33%;
+         .experience-time {
+            h2 {
+               font-size: 20px;
+               font-weight: 400;
+            }
+            h3 {
+               font-size: 16px;
+               font-weight: 300;
+               margin-top: 5px;
+            }
+         }
+         .timeline {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 26px 0 30px;
+            .circle {
+               background-color: $pink;
+               width: 8px;
+               height: 8px;
+               display: inline-block;
+               border-radius: 50%;
+               margin-right: 5px;
+            }
+            .line {
+               background-color: $primary-color;
+               display: inline-block;
+               height: 2px;
+               width: 100%;
+            }
+         }
+         .timeline-content {
+            h4 {
+               font-size: 20px;
+               font-weight: 400;
+            }
+            h5 {
+               font-size: 12px;
+               font-weight: 300;
+               margin: 15px 0;
+            }
+            p {
+               color: #999fb3;
+               max-width: 335px;
+            }
+         }
+         &:last-child {
+            .timeline .line {
+               max-width: 50%;
+            }
+         }
+      }
+   }
+   #skills {
+      .col {
+         flex-basis: 50%;
+
+         
       }
    }
 }

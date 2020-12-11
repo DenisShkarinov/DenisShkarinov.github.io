@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="app.css">
+   <link rel="stylesheet" href="src/css/main.css">
    <title>Webpack Template</title>
 </head>
 <body>
@@ -14,8 +14,8 @@
                <a href="#">BROWNY</a>
             </div>
             <ul class="desktop-menu__nav">
-               <li><a href="#" class="current-link">education</a></li>
-               <li><a href="#">skills</a></li>
+               <li><a href="#education" >education</a></li>
+               <li><a href="#skills">skills</a></li>
                <li><a href="#">experience</a></li>
                <li><a href="#">profile</a></li>
                <li><a href="#">portfolio</a></li>
@@ -93,14 +93,16 @@
                   </div>
                   <div class="col">
                      <div class="image-container">
-                        <div class="image-box"></div>
-                        <div class="image-list__icon">
+                        <div class="image-box">
+                           <img src="src/images/profile_image.jpg" alt="">
+                        </div>
+                        <div class="image-list__icons">
                            <ul>
-                              <li><a href="#"></a></li>
-                              <li><a href="#"></a></li>
-                              <li><a href="#"></a></li>
-                              <li><a href="#"></a></li>
-                              <li><a href="#"></a></li>
+                              <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="src/images/Icons/Facebook.svg" alt=""></a></li>
+                              <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"><img src="src/images/Icons/Twitter.svg" alt=""></a></li>
+                              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="src/images/Icons/Instagram.svg" alt=""></a></li>
+                              <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><img src="src/images/Icons/LinkedIn.svg" alt=""></a></li>
+                              <li><a href="https://www.drebble.com/" target="_blank" rel="noopener"><img src="src/images/Icons/Dribble.svg" alt=""></a></li>
                            </ul>
                         </div>
                      </div>
@@ -109,7 +111,79 @@
             </div>
             
          </div>
-         
+      </section>
+
+      <section id="education">
+         <div class="section-heading">
+            <h2>education</h2>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div class="experience-time">
+                     <h2>2008 - 2010</h2>
+                     <h3>Master of Computer Science</h3>
+                  </div>
+                  <div class="timeline">
+                     <span class="circle"></span>
+                     <span class="line"></span>
+                  </div>
+                  <div class="timeline-content">
+                     <h4>UNIVERSITY OF NORTH CAROLINA</h4>
+                     <h5>North Carolina, USA</h5>
+                     <p>
+                        Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="experience-time">
+                     <h2>2008 - 2010</h2>
+                     <h3>Master of Computer Science</h3>
+                  </div>
+                  <div class="timeline">
+                     <span class="circle"></span>
+                     <span class="line"></span>
+                  </div>
+                  <div class="timeline-content">
+                     <h4>UNIVERSITY OF NORTH CAROLINA</h4>
+                     <h5>North Carolina, USA</h5>
+                     <p>
+                        Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="experience-time">
+                     <h2>2008 - 2010</h2>
+                     <h3>Master of Computer Science</h3>
+                  </div>
+                  <div class="timeline">
+                     <span class="circle"></span>
+                     <span class="line"></span>
+                  </div>
+                  <div class="timeline-content">
+                     <h4>UNIVERSITY OF NORTH CAROLINA</h4>
+                     <h5>North Carolina, USA</h5>
+                     <p>
+                        Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="skills">
+         <div class="section-heading">
+            <h2>Skills</h2>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col"></div>
+            </div>
+         </div>
       </section>
    </main>
 
@@ -117,6 +191,6 @@
 
    </footer>
 
-   <script src="app.js"></script>
+   <script src="src/js/common.js"></script>
 </body>
 </html>

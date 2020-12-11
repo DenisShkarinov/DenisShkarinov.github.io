@@ -1,0 +1,434 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*, :before, :after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #ffffff;
+  color: #676a81;
+  font-family: 'Poppins';
+}
+
+body p {
+  color: #999fb3;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: #43485c;
+  font-weight: bold;
+}
+
+body h1 {
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+body h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+body h3 {
+  color: #3c4258;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+body h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body h5 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+body .btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #b636ff;
+  border-radius: 4px;
+  border: 1px solid #b636ff;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: capitalize;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+body .btn:hover {
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  background: #9f00ff;
+  border: 1px solid #9f00ff;
+}
+
+body img {
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+header nav {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header nav .desktop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .desktop-menu a {
+  text-transform: uppercase;
+}
+
+header nav .desktop-menu .logo a {
+  color: #d92cf9;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+header nav .desktop-menu .desktop-menu__nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav .desktop-menu .desktop-menu__nav li:first-child {
+  margin-left: 0;
+}
+
+header nav .desktop-menu .desktop-menu__nav li:last-child {
+  margin-right: 0;
+}
+
+header nav .desktop-menu .desktop-menu__nav li a {
+  color: #6a708e;
+}
+
+header nav .desktop-menu .desktop-menu__nav li a:hover {
+  color: #d92cf9;
+}
+
+header nav .desktop-menu .desktop-menu__nav li .current-link {
+  color: #d92cf9;
+}
+
+header nav .desktop-menu,
+header nav .mobile-menu {
+  height: 70px;
+}
+
+header nav .mobile-menu, header nav .mobile-menu__nav {
+  display: none;
+}
+
+.btn {
+  color: #ffffff;
+}
+
+#welcome-hero {
+  background-image: url(../images/welcome-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 890px;
+  padding-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+#welcome-hero .header-content {
+  position: relative;
+  z-index: 100;
+}
+
+#welcome-hero .header-content h1 {
+  text-align: center;
+}
+
+#welcome-hero .header-content h1 b {
+  color: #d92cf9;
+}
+
+#welcome-hero .header-content p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 30px 0 60px;
+}
+
+#welcome-hero:before {
+  content: "";
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: calc(890px - 70px);
+  background: rgba(31, 44, 108, 0.65);
+}
+
+main section {
+  padding: 50px 0 100px;
+}
+
+main section .section-heading {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e5ebf2;
+}
+
+main section .section-heading h2 {
+  text-align: center;
+}
+
+main #about .about-content {
+  padding-top: 100px;
+}
+
+main #about .about-content .col {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  max-width: 585px;
+}
+
+main #about .about-content .col .text-container {
+  padding: 0 15px;
+}
+
+main #about .about-content .col .text-container .text-container__description {
+  border-bottom: 1px solid #999fb3;
+  padding: 35px 0 43px;
+}
+
+main #about .about-content .col .text-container .row .col-sm {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 35px 0px;
+}
+
+main #about .about-content .col .text-container .row .col-sm h3 {
+  text-transform: capitalize;
+}
+
+main #about .about-content .col .text-container .row .col-sm a {
+  color: #999fb3;
+}
+
+main #about .about-content .col:last-child {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+main #about .about-content .col .image-container {
+  position: relative;
+}
+
+main #about .about-content .col .image-container .image-list__icons {
+  background-color: #1f2c6c;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+}
+
+main #about .about-content .col .image-container .image-list__icons ul > li {
+  display: inline-block;
+  margin-left: 20px;
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+main #about .about-content .col .image-container .image-list__icons ul > li img {
+  width: 20px;
+  height: 20px;
+}
+
+main #about .about-content .col .image-container .image-list__icons ul > li:first-child {
+  margin-left: 0;
+}
+
+main #education {
+  background-color: #f9fbfd;
+}
+
+main #education .container {
+  padding-top: 50px;
+}
+
+main #education .col {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+main #education .col .experience-time h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+main #education .col .experience-time h3 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+main #education .col .timeline {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 26px 0 30px;
+}
+
+main #education .col .timeline .circle {
+  background-color: #d92cf9;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+main #education .col .timeline .line {
+  background-color: #999fb3;
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+}
+
+main #education .col .timeline-content h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+main #education .col .timeline-content h5 {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+main #education .col .timeline-content p {
+  color: #999fb3;
+  max-width: 335px;
+}
+
+main #education .col:last-child .timeline .line {
+  max-width: 50%;
+}
+
+main #skills .col {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  header nav .desktop-menu {
+    display: none;
+  }
+  header nav .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
