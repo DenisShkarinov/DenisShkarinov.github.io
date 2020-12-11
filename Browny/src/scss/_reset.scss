@@ -1,0 +1,28 @@
+html {
+   scroll-behavior: smooth;
+}
+*, :before, :after {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   transition: 0.3s;
+}
+ul {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+.container {
+   max-width: 1170px;
+   margin: 0 auto;
+   .row {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+   }
+   .column {
+      display: flex;
+      flex-flow: column;
+   }
+}
