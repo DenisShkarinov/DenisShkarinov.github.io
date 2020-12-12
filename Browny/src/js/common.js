@@ -1,9 +1,12 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-   
-
+   const navLinks = document.querySelectorAll('.desktop-menu li > a');
    const sections = document.querySelectorAll('main > section');
+   
+   window.addEventListener('scroll', (e) => {
+      
+   })
    
    // * PROGRESS-BAR IN SECTION SKILLS
    const skillsBlock = document.getElementById('skills')

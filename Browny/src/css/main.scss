@@ -231,14 +231,19 @@ main {
                   ul > li {
                      display: inline-block;
                      margin-left: 20px;
+                     width: 40px;
+                     text-align: center;
                      border: 2px solid #fff;
                      padding: 5px;
                      border-radius: 10px;
 
-                     img {
-                        width: 20px;
-                        height: 20px;
+                     a {
+                        color: #ffffff;
+                        i {                           
+                           padding: 5px;
+                        }
                      }
+                     
                      &:first-child {
                         margin-left: 0;
                      }
@@ -426,6 +431,82 @@ main {
             height: 78%;
             z-index: -1;
          }
+      }
+   }
+   #profiles {
+      border-bottom: 2px solid #e5ebf2;
+      .profiles-content {
+         padding-top: 100px;
+         .row:last-child {
+            .col {
+               border-top: 1px solid $primary-color;
+            }
+         }
+         .col {
+            flex-basis: 25%;
+            border-right: 1px solid $primary-color;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .profile {
+               .profile-txt {
+                  display: flex;
+                  flex-flow: column;
+                  justify-content: center;
+                  align-items: center;
+                  
+                  a {
+                     text-align: center;
+                     i {
+                        color: $link;
+                        font-size: 40px;
+                     }
+                  }
+                  .profile-name {
+                     display: block;
+                     color: #636a82;
+                     font-size: 16px;
+                  }
+               }
+            }
+            &:last-child {
+               border-right: 0;
+            }
+            &::before {
+               content: '';
+               position: absolute;
+               left: 0;
+               width: 0%;
+               height: 100%;
+               background-color: $pink;
+               opacity: 0;
+               z-index: -1;
+               transition: width .5s ease;
+            }
+            &:hover {
+               .profile .profile-txt {
+                  a > i {
+                     color: #ffffff;
+                  }
+                  .profile-name {
+                     color: #ffffff;
+                  }
+               }
+               &:before {
+                  width: 100%;
+                  opacity: 1;
+                  transition: width .5s ease-in;
+               }
+               
+            }
+         }
+      }
+   }
+   #portfolio {
+      .portfolio-content {
+         padding-top: 100px;
       }
    }
 }
