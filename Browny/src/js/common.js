@@ -1,6 +1,11 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
+   
+
+   const sections = document.querySelectorAll('main > section');
+   
+   // * PROGRESS-BAR IN SECTION SKILLS
    const skillsBlock = document.getElementById('skills')
    const progressBars = skillsBlock.querySelectorAll('.progress-bar');
 

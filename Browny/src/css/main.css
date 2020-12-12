@@ -473,6 +473,91 @@ main #skills .col .bar-wrapper .single-progress h3 {
   left: 20px;
 }
 
+main #experience {
+  border-bottom: 2px solid #e5ebf2;
+}
+
+main #experience .main-timeline {
+  position: relative;
+  padding-top: 100px;
+}
+
+main #experience .main-timeline .timeline-box {
+  margin-bottom: 75px;
+}
+
+main #experience .main-timeline .timeline-box .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+main #experience .main-timeline .timeline-box .row .col {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  text-align: right;
+}
+
+main #experience .main-timeline .timeline-box .row .col .experience-time h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+main #experience .main-timeline .timeline-box .row .col .experience-time h3 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: .5rem;
+  text-transform: uppercase;
+}
+
+main #experience .main-timeline .timeline-box .row .col .experience-description h4 {
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+main #experience .main-timeline .timeline-box .row .col .experience-description h4 span {
+  position: absolute;
+  top: 0;
+  right: -62px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d92cf9;
+}
+
+main #experience .main-timeline .timeline-box .row .col .experience-description h5 {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 18px 0 20px;
+}
+
+main #experience .main-timeline .timeline-box .row .col .experience-description p {
+  font-size: 14px;
+}
+
+main #experience .main-timeline .timeline-box .row .col:nth-child(2n) {
+  text-align: left;
+}
+
+main #experience .main-timeline .timeline-box .row .col:nth-child(2n) .experience-description h4 > span {
+  left: -63px;
+}
+
+main #experience .main-timeline:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 105px;
+  margin: 0 auto;
+  background-color: #999fb3;
+  width: 2px;
+  height: 78%;
+  z-index: -1;
+}
+
 @media only screen and (max-width: 1000px) {
   header nav .desktop-menu {
     display: none;

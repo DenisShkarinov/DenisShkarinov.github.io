@@ -353,7 +353,80 @@ main {
       border-bottom: 2px solid #e5ebf2;
    }
    #experience {
+      border-bottom: 2px solid #e5ebf2;
+      .main-timeline {
+         position: relative;
+         padding-top: 100px;
+         
 
+         .timeline-box {
+            margin-bottom: 75px;
+
+            .row {
+               flex-flow: row;
+               //align-items: center;
+
+               .col {
+                  flex-basis: 45%;
+                  text-align: right;
+                  
+                  .experience-time {
+                     h2 {
+                        font-size: 18px;
+                        font-weight: 400;
+                     }
+                     h3 {
+                        font-size: 16px;
+                        font-weight: 300;
+                        margin-top: .5rem;
+                        text-transform: uppercase;
+                     }
+                  }
+                  .experience-description {
+                     h4 {
+                        font-size: 16px;
+                        font-weight: 400;
+                        position: relative;
+                        span {
+                           position: absolute;
+                           top: 0; right: -62px;
+                           width: 8px; height: 8px;
+                           border-radius: 50%;
+                           background-color: $pink;
+                        }
+                     }
+                     h5 {
+                        font-size: 14px;
+                        font-weight: 300;
+                        margin: 18px 0 20px;
+                     }
+                     p {
+                        font-size: 14px;
+                     }
+                  }
+
+                  &:nth-child(2n) {
+                     text-align: left;
+
+                     .experience-description h4 > span {
+                        left: -63px;
+                     }
+                  }
+                  
+               }
+            }
+         }
+         &:before {
+            content: "";
+            position: absolute;
+            left: 0; right: 0; top: 105px;
+            margin: 0 auto;
+            background-color: $primary-color;
+            width: 2px;
+            height: 78%;
+            z-index: -1;
+         }
+      }
    }
 }
 
