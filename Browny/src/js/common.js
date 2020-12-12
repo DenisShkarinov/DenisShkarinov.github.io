@@ -28,4 +28,33 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       updateProgress()
    })
+
+   
+})
+const clientSwiper = new Swiper('.clients-container', {
+   // Optional parameters
+   direction: 'horizontal',
+   speed: 300,
+   grabCursor: true,
+   draggable: true,
+   spaceBetween: '30',
+   slidesPerView: 7,
+   breakpoints: {
+      320: {
+         slidesPerView: 2,
+         spaceBetween: 15
+      },
+      480: {
+         slidesPerView: 3,
+         spaceBetween: 20
+      }, 
+      640: {
+         slidesPerView: 3,
+         spaceBetween: 25
+      },
+      800: {
+         slidesPerView: 4,
+         spaceBetween: 30
+      },
+   }
 })

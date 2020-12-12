@@ -26,3 +26,8 @@ a {
       flex-flow: column;
    }
 }
+input, textarea, button {
+   &:focus, &:active {
+      outline: none;
+   }
+}

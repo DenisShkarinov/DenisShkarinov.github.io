@@ -6,9 +6,7 @@ $('.burger__btn').on('click', function(e) {
    $(this).toggleClass('burger__btn__active');
    if ($('.burger__btn__active')) {
       $('.mobile-navigation').toggleClass('mobile-navigation__active');
-   } else {
-      
-   }
+   } 
 })
 
 $('.modal').on('click', function(e) {

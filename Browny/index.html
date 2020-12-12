@@ -3,6 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
    <link rel="stylesheet" href="src/css/main.css">
    <title>Browny - Portfolio Page</title>
 </head>
@@ -522,17 +523,122 @@
          <div class="section-heading">
             <h2>clients</h2>
          </div>
+         <div class="clients-container">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="item">
+                     <img src="src/images/icons/i1.png" alt="">
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="item">
+                     <img src="src/images/icons/i2.png" alt="">
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="item">
+                     <img src="src/images/icons/i3.png" alt="">
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="item">
+                     <img src="src/images/icons/i4.png" alt="">
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="item">
+                     <img src="src/images/icons/i5.png" alt="">
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="item">
+                     <img src="src/images/icons/i6.png" alt="">
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="item">
+                     <img src="src/images/icons/i7.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="contact">
+         <div class="section-heading">
+            <h2>contact me</h2>
+         </div>
          <div class="container">
-            <div class="clients-content">
-               
+            <div class="row">
+               <form action="#" name="contact" method="POST">
+                  <div class="row">
+                     <div class="form-field">
+                        <input type="text" placeholder="Name*" minlength="3" maxlength="15" required>
+                     </div>
+                     <div class="form-field">
+                        <input type="email" placeholder="Email*" minlength="6" maxlength="20" required>
+                     </div>
+                  </div>
+                  <div class="form-field">
+                     <input type="text" placeholder="Subject" minlength="6" maxlength="50">
+                  </div> 
+                  <div class="form-field fill">
+                     <textarea placeholder="Message"></textarea>
+                  </div>
+                  <div class="form-field fill">
+                     <button class="btn">submit</button>
+                  </div>                  
+               </form>
+               <div class="col">
+                  <div class="contact-info">
+                     <h3>Browny Star</h3>
+                     <p>UI/UX Designer</p>
+                  </div>
+                  <div class="contact-info">
+                     <h3>Phone</h3>
+                     <a href="tel:8987-123-6547" target="_blank" rel="noopener">987-123-6547</a>
+                  </div>
+                  <div class="contact-info">
+                     <h3>Email</h3>
+                     <a href="mailto:browny@info.com" target="_blank" rel="noopener">browny@info.com</a>
+                  </div>
+                  <div class="contact-info">
+                     <h3>Website</h3>
+                     <a href="www.brownsine.com" target="_blank" rel="noopener">www.brownsine.com</a>
+                  </div>
+                  <div class="contact-info">
+                     <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.dribbble.com/" target="_blank" rel="noopener"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
+                     </ul>
+                     
+                  </div>
+               </div>
             </div>
          </div>
       </section>
    </main>
 
    <footer>
-
+      <div class="container">
+         <p class="privacy">© Copyright Yourname. Design And Developed By Themesine</p>
+      </div>
+      <div class="scroll-to-top">
+         <a href="#">
+            <i class="fas fa-angle-up"></i>
+         </a>
+      </div>
    </footer>
+
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script rel="preload" src="https://kit.fontawesome.com/049b7c992f.js" crossorigin="anonymous"></script>
    <script src="src/js/common.js"></script>
 </body>
