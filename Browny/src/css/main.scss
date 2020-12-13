@@ -704,8 +704,8 @@ footer {
       position: fixed;
       right: 20px;
       bottom: 20px;
-      display: none;
       z-index: 1000; 
+      opacity: 0;
       a {
          background-color: $pink;
          display: flex;
@@ -724,7 +724,7 @@ footer {
       }
    }
    .active__link {
-      display: block;
+      opacity: 1; 
    }
 }
 

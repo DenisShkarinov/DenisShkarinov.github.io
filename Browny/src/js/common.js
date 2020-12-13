@@ -21,13 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
          })
       }
    })
-
+   const topLink = document.getElementById('scroll-to-top');
+   
    window.addEventListener('scroll', (event) => {
-      const topLink = document.querySelector('.scroll-to-top');
-      if (window.pageYOffset > 650) {
-         topLink.classList.style.display = "block !important"; 
+      
+      if (window.pageYOffset < 650) {
+         topLink.classList.remove('active__link'); 
       } else {
-         topLink.classList.style.display = "none";
+         topLink.classList.add('active__link')
       }
    })
 
