@@ -1,12 +1,25 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
+
+   const burgerBtn = document.querySelector('.burger__btn');
+   const mobMenuNav = document.querySelector('.mobile-menu__nav');
+
+   burgerBtn.addEventListener('click', (event) => {
+      event.preventDefault()
+      let target = event.target;
+      if (target.tagName != "A") return;
+      else {
+         target.classList.toggle('active');
+         mobMenuNav.classList.toggle('mobile-menu-nav__active')
+      }
+      
+   })
+
+
    const navLinks = document.querySelectorAll('.desktop-menu li > a');
    const sections = document.querySelectorAll('main > section');
    
-   window.addEventListener('scroll', (e) => {
-      
-   })
    
    // * PROGRESS-BAR IN SECTION SKILLS
    const skillsBlock = document.getElementById('skills')

@@ -130,8 +130,36 @@ header {
       .mobile-menu {
          height: 70px;
       }
-      .mobile-menu, .mobile-menu__nav {
+      .mobile-menu {
          display: none;
+      }
+      .mobile-menu__nav {
+         position: fixed;
+         right: 0%; top: 70px; 
+         width: 0;
+         height: 100vh;
+         background-color: #ffffff;
+         border-top: 1px solid $primary-color;
+         transition: width .4s ease-in-out;
+
+         ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            padding: 15px 25px;
+
+            li {
+               margin-bottom: 1rem;
+
+               a {
+                  opacity: 0;
+                  color: $link;
+                  font-size: 26px;
+                  text-transform: uppercase;
+               }
+            }
+         }
       }
    }
 }
@@ -166,6 +194,7 @@ header {
          font-weight: 300;
          letter-spacing: 1px;
          margin: 30px 0 60px;
+         text-align: center;
       }
       
    }
@@ -174,7 +203,7 @@ header {
       position: absolute;
       top: 70px;
       width: 100%;
-      height: calc(890px - 70px);
+      height: calc(100% - 70px);
       background: rgba(31,44,108,.65);
    }
 }
@@ -241,9 +270,7 @@ main {
 
                      a {
                         color: #ffffff;
-                        i {                           
-                           padding: 5px;
-                        }
+                        
                      }
                      
                      &:first-child {
@@ -593,12 +620,17 @@ main {
          padding-top: 100px;
          display: flex;
          flex-flow: column;
-         justify-content: center;
          flex-basis: 50%;
          max-width: 457px;
-
+         
+         .form-group {
+            display: inherit;
+            .form-field {
+               flex-basis: 50%;
+            }
+         }
          .form-field {
-            flex-basis: 46%;
+            //flex-basis: 46%;
             margin: 0 2% 4%;
             
             input {
@@ -608,8 +640,6 @@ main {
             }
             .fill {
                flex-basis: 100%;
-
-               
             }
             textarea {
                border: 1px solid $primary-color;
@@ -622,7 +652,7 @@ main {
             button {
                font-size: 20px;
                width: 100%;
-               
+               cursor: pointer;
             }
          }
          
@@ -653,6 +683,7 @@ main {
             }
             &:first-child {
                h3 {
+                  font-size: 30px;
                   font-weight: bold;
                }
             }
@@ -664,6 +695,7 @@ main {
 footer {
    .privacy {
       text-align: center;
+      padding: 15px 0;
    }
    .scroll-to-top {
       position: fixed;
@@ -690,11 +722,153 @@ footer {
 
 @media only screen and (max-width: 1000px) {
    header {
+      position: fixed;
+      width: 100vw;
       nav .desktop-menu {
          display: none;
       }
       nav .mobile-menu {
          display: flex;
+         justify-content: space-between;
+         align-items: center;
+         .logo a {
+            color: $pink;
+            font-weight: 700;
+            font-size: 16px;
+         }
+         .burger__btn {
+            position: relative;
+            background-color: $button;
+            border-radius: 4px;
+            border: 1px solid $pink;
+            width: 50px;
+            height: 50px;  
+
+            span, span:before, span:after {
+               content: "";
+               position: absolute;
+               left: 0;right: 0;top: 0;bottom: 0;
+               margin: auto;
+               width: 20px;
+               height: 2px;
+               border-radius: 3px;
+               background-color: #ffffff;
+            }
+            span:before {
+               transform: translateY(5px);
+            }
+            span:after {
+               transform: translateY(-5px);
+            }
+         }
+         .active {
+            span {
+               height: 0;
+            }
+            span:before {
+               transform: rotate(45deg);
+            }
+            span:after {
+               transform: rotate(-45deg);
+            }
+         }
+      }
+      nav .mobile-menu-nav__active {
+         width: 80%;
+         transition: width .4s ease-in-out;
+
+         ul li > a {
+            opacity: 1;
+         }
+      }
+   }
+   #welcome-hero {
+      height: 768px;
+
+   }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 720px) {
+   .container {
+      padding: 0 10px;
+      .row {
+         .col {
+            flex-basis: 100% !important;
+         }
+         .col-sm {
+            flex-basis: 100% !important;
+            margin: 15px 0;
+         }
+      }
+   }
+   main {
+      #about {
+         .about-content .col .text-container {
+            padding: 0;
+         }
+         .about-content .col .image-container {
+            max-width: 300px;
+            margin: 0 auto;
+
+            .image-list__icons {
+               bottom: -56px;
+               ul > li {
+               width: 30px;
+               }
+            }
+         }
+         
+      }
+      #education {
+         .timeline-content {
+            padding-bottom: 2.5rem;
+
+            &:last-child {
+               padding-bottom: 0;
+            }
+         }
+      }
+      #skills .col .bar-wrapper .single-progress {
+         h3 {
+            left: 5%;
+         }
+      }
+      #experience {
+         .main-timeline {
+            ul {
+               li:nth-child(2n) {
+                  .timeline-box .row {
+                     flex-flow: column-reverse;
+                  }
+               }
+            }
+            &::before {
+               content: none;
+            }
+            .timeline-box .row .col .experience-description h4 span {
+               display: none;
+            }
+            .timeline-box {
+               .row {
+                  flex-flow: column;
+                  .col {
+                     text-align: left;
+                  }
+               }
+               
+            }
+         }
+      }
+      #portfolio .portfolio-content .col .portfolio-box {
+         margin: 15px 0;
+      }
+      #contact {
+         form {
+            flex-basis: 100%;
+         }
+         .col {
+            padding: 100px 0 0 0;   
+         }
       }
    }
 }
