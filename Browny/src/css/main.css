@@ -494,6 +494,10 @@ main section .section-heading h2 {
   text-align: center;
 }
 
+main .container {
+  padding: 0 10px;
+}
+
 main #about .about-content {
   padding-top: 100px;
 }
@@ -557,7 +561,7 @@ main #about .about-content .col .image-container .image-list__icons {
 main #about .about-content .col .image-container .image-list__icons ul > li {
   display: inline-block;
   margin-left: 20px;
-  width: 40px;
+  width: 30px;
   text-align: center;
   border: 2px solid #fff;
   padding: 5px;
@@ -746,7 +750,7 @@ main #experience .main-timeline .timeline-box .row .col .experience-description 
 main #experience .main-timeline .timeline-box .row .col .experience-description h4 span {
   position: absolute;
   top: 0;
-  right: -62px;
+  right: -12%;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -768,7 +772,7 @@ main #experience .main-timeline .timeline-box .row .col:nth-child(2n) {
 }
 
 main #experience .main-timeline .timeline-box .row .col:nth-child(2n) .experience-description h4 > span {
-  left: -63px;
+  left: -12%;
 }
 
 main #experience .main-timeline:before {
@@ -1094,6 +1098,12 @@ footer .scroll-to-top {
   position: fixed;
   right: 20px;
   bottom: 20px;
+  display: none;
+  z-index: 1000;
+}
+
+footer .scroll-to-top a {
+  background-color: #d92cf9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,15 +1113,11 @@ footer .scroll-to-top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1000;
-}
-
-footer .scroll-to-top a {
-  background-color: #d92cf9;
   border: 1px solid #b636ff;
   border-radius: 50%;
   color: #ffffff;
-  padding: 10px 15px;
+  width: 40px;
+  height: 40px;
 }
 
 footer .scroll-to-top a:hover {
@@ -1200,7 +1206,15 @@ footer .scroll-to-top a:hover {
   .container {
     padding: 0 10px;
   }
+  .container .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .container .row .col {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
   }

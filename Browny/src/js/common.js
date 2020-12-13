@@ -9,13 +9,27 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault()
       let target = event.target;
       if (target.tagName != "A") return;
-      else {
+      
          target.classList.toggle('active');
          mobMenuNav.classList.toggle('mobile-menu-nav__active')
+      if (mobMenuNav.classList.contains('mobile-menu-nav__active')) {
+         mobMenuNav.addEventListener('click', (e) => {
+            if (target.tagName == 'A') {
+               target.classList.remove('active')
+               mobMenuNav.classList.remove('mobile-menu-nav__active')
+            }
+         })
       }
-      
    })
 
+   window.addEventListener('scroll', (event) => {
+      const topLink = document.querySelector('.scroll-to-top');
+      if (window.pageYOffset > 650) {
+         topLink.classList.style.display = "block !important"; 
+      } else {
+         topLink.classList.style.display = "none";
+      }
+   })
 
    const navLinks = document.querySelectorAll('.desktop-menu li > a');
    const sections = document.querySelectorAll('main > section');
