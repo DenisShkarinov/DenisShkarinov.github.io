@@ -2,6 +2,20 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+   const downloadBtn = document.getElementById('toDownload');
+
+   downloadBtn.addEventListener('click', (event) => {
+      if (event.target.tagName != "A") return;
+
+      let question = confirm("Do you really want to download a resume?")
+      
+      if (question == false) {
+         event.target.removeAttribute('download')
+      } else {
+         event.target.setAttribute('download', 'Resume.docx')
+      }
+   })
+
    const burgerBtn = document.querySelector('.burger__btn');
    const mobMenuNav = document.querySelector('.mobile-menu__nav');
 
@@ -30,11 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
          topLink.classList.add('active__link')
       }
-   })
-
-   const navLinks = document.querySelectorAll('.desktop-menu li > a');
-   const sections = document.querySelectorAll('main > section');
-   
+   })   
    
    // * PROGRESS-BAR IN SECTION SKILLS
    const skillsBlock = document.getElementById('skills')
