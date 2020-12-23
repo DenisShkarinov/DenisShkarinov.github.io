@@ -252,6 +252,11 @@ main {
             text-align: center;
             text-transform: uppercase;               
             font-weight: 700;
+
+            p {
+               font-size: 16px;
+               font-weight: 600;
+            }
          }
       }
       
@@ -1240,10 +1245,6 @@ footer {
             width: 100px;
             height: 100px;
 
-            p {
-               font-size: 35px;
-               line-height: 35px;
-            }
          }
          .time-count {
             display: flex;

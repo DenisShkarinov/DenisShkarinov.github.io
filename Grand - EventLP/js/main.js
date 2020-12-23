@@ -19,10 +19,10 @@ let days = Math.round((dateMs-dateNowMs)/(1000*60*60*24)),
    const secEl = document.querySelector('#clock .seconds');
    
    const timer = setInterval(function() {
-      secEl.innerHTML = seconds + "\n sec";
-      minEl.innerHTML = minutes + "\n min";
-      hoursEl.innerHTML = hours + "\n hours";
-      daysEl.innerHTML = days + "\n days";
+      secEl.innerHTML = seconds + `<p>seconds</p>`;
+      minEl.innerHTML = minutes + `<p>minutes</p>`;
+      hoursEl.innerHTML = hours + `<p>hours</p>`;
+      daysEl.innerHTML = days + `<p>days</p>`;
       --seconds;
       if (seconds == 0) {
          seconds = 60;

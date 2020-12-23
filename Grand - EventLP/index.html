@@ -7,8 +7,8 @@
       Length: 1 page">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="robots">
-   <link rel="preload stylesheet" href="css/main.css">
-   <link rel="preload stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="preload stylesheet" href="css/main.css" as="style">
+   <link rel="preload stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style">
    <title>Grand Event</title>
 </head>
 <body>
@@ -112,10 +112,10 @@
             </div>
             <div class="row time-countdown">
                <div id="clock" class="time-count">
-                  <div class="time-entry days">days</div>
-                  <div class="time-entry hours">hours</div>
-                  <div class="time-entry minutes">minutes</div>
-                  <div class="time-entry seconds">seconds</div> 
+                  <div class="time-entry days"></div>
+                  <div class="time-entry hours"></div>
+                  <div class="time-entry minutes"></div>
+                  <div class="time-entry seconds"></div> 
                </div>
             </div>
             <div class="row">
@@ -1325,11 +1325,9 @@
    <a href="#home" class="back-to__top">
       <i class="fas fa-chevron-up"></i>
    </a>
-
-   
-   <script src="js/jquery.min.js"></script>
-   <script rel="preload" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <script rel="preload" src="https://kit.fontawesome.com/049b7c992f.js" crossorigin="anonymous"></script>
+   <script src="./js/jquery.min.js"></script>
+   <script rel="preload" src="https://unpkg.com/swiper/swiper-bundle.min.js" as="script"></script>
+   <script rel="preload" src="https://kit.fontawesome.com/049b7c992f.js" crossorigin="anonymous" as="script"></script>
    <script src="js/main.js"></script>
 </body>
 </html>
