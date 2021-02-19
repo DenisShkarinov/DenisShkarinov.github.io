@@ -262,17 +262,23 @@ main #home .swiper-container .swiper-slide:nth-child(1) {
   background: url(../images/slider/slide1.webp);
   background-position: center center;
   background-size: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 main #home .swiper-container .swiper-slide:nth-child(2) {
   background: url(../images/slider/slide2.webp);
   background-position: center center;
   background-size: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 main #home .swiper-container .swiper-slide:nth-child(3) {
   background: url(../images/slider/slide3.webp);
   background-position: center center;
+  -o-object-fit: cover;
+  object-fit: cover;
   background-size: cover;
 }
 
