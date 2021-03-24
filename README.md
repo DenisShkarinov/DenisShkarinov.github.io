@@ -16,3 +16,13 @@
 [GrandLp - Event](https://denisshkarinov.github.io/Grand%20-%20EventLP/index.html)
 
 [Browny Portfolio Page](https://denisshkarinov.github.io/Browny/)
+
+# React projects:
+
+[Tours](https://react-app-tours.netlify.app/)
+
+[Menu](https://react-app-menu-complete.netlify.app/)
+
+[Cart](https://react-app-cart.netlify.app/)
+
+[Tabs](https://react-app-tabs.netlify.app/)
