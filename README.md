@@ -28,3 +28,5 @@
 [Tabs](https://react-app-tabs.netlify.app/)
 
 [Random user](https://zealous-saha-0df265.netlify.app/)
+
+[App Notifier](https://app-notifier.vercel.app/)
