@@ -1,11 +1,5 @@
 # DenisShkarinov.github.io
 
-## Bad:
-
-[HouseVOP](https://denisshkarinov.github.io/HouseVOP/)
-
-[Create & Simple](https://denisshkarinov.github.io/CleanAndSimple/)
-
 ## Good:
 [SmartLP](https://denisshkarinov.github.io/SmartLP/)
 
