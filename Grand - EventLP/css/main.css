@@ -236,6 +236,7 @@ main #home .swiper-container .swiper-slide .text-content {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  overflow: hidden;
 }
 
 main #home .swiper-container .swiper-slide .text-content p {
