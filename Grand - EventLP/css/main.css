@@ -214,7 +214,9 @@ header nav .mobile-menu__nav ul li a {
 main section {
   padding: 0 0 60px 0;
 }
-
+main #home {
+  overflow: hidden;
+}
 main #home .swiper-container .swiper-slide {
   position: relative;
   width: 100%;
